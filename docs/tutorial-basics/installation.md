@@ -35,10 +35,10 @@ If you're using Windows, please refer to the "[Other Installation Methods]" sect
 
 ### All Components
 ```bash
-cargo install --git https://narrow.link/git/agent
-cargo install --git https://narrow.link/git/gateway
-cargo install --git https://narrow.link/git/client
-cargo install --git https://narrow.link/git/token-generator
+cargo install --git https://git.narrow.link/agent
+cargo install --git https://git.narrow.link/gateway
+cargo install --git https://git.narrow.link/client
+cargo install --git https://git.narrow.link/token-generator
 ```
 <!-- ```bash
 cargo install narrowlink-client narrowlink-agent narrowlink-gateway narrowlink-token-generator
@@ -61,10 +61,10 @@ cargo install --force narrowlink-client narrowlink-agent narrowlink-gateway narr
 ``` -->
 
 ```bash
-cargo install --force --git https://narrow.link/git/agent
-cargo install --force --git https://narrow.link/git/gateway
-cargo install --force --git https://narrow.link/git/client
-cargo install --force --git https://narrow.link/git/token-generator
+cargo install --force --git https://git.narrow.link/agent
+cargo install --force --git https://git.narrow.link/gateway
+cargo install --force --git https://git.narrow.link/client
+cargo install --force --git https://git.narrow.link/token-generator
 ```
 
 <!-- or you can use ([cargo-update]) command to update all installed packages.
@@ -80,11 +80,11 @@ cargo install-update narrowlink-client narrowlink-agent narrowlink-gateway narro
 <!-- ## Precompiled Binary
 If you prefer to use precompiled binaries, they are available on the GitHub release page. Currently, we provide binaries for Linux, macOS, and Windows platforms for both ARM and x86 architectures. However, it's worth noting that Narrowlink is not limited to these platforms - you can build for other targets using alternative installation methods.
 ### Client
-```https://narrow.link/git/client/releases```
+```https://git.narrow.link/client/releases```
 ### Agent
-```https://narrow.link/git/agent/releases```
+```https://git.narrow.link/agent/releases```
 ### Gateway
-```https://narrow.link/git/gateway/releases``` -->
+```https://git.narrow.link/gateway/releases``` -->
 
 ## Source Code
 
@@ -98,4 +98,4 @@ If you prefer to obtain pre-release versions of Narrowlink or modify the code be
 [Token Generator]: /docs/token-generator/
 [Other Installation Methods]: https://forge.rust-lang.org/infra/other-installation-methods.html
 [cargo-update]: https://github.com/nabijaczleweli/cargo-update
-[Narrowlink's GitHub repository]: https://github.com/narrowlink/
+[Narrowlink's GitHub repository]: https://git.narrow.link/
