@@ -9,7 +9,7 @@ const config = {
   title: 'Narrowlink',
   tagline: 'A secure and borderless network Swiss Army Knife',
   favicon: 'img/favicon.ico',
-
+  trailingSlash: false,
   // Set the production url of your site here
   url: 'https://narrowlink.com',
   // Set the /<baseUrl>/ pathname under which your site is served
@@ -43,7 +43,6 @@ const config = {
           priority: 0.0,
           ignorePatterns: ['/tags/**'],
           filename: 'sitemap.xml',
-          trailingSlash: true,
         },
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
