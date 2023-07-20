@@ -40,7 +40,7 @@ Replace the `token` field with the value obtained from the token generator and r
 Finally, run the agent with the following command:
 
 ```bash
-narrolink-agent
+narrowlink-agent
 ```
 
 :::note
