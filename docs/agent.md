@@ -13,7 +13,7 @@ Currently, the agent supports websockets over HTTP and HTTPS protocols as the tr
 To further enhance security, the agent provides the option for end-to-end encryption of requests and responses, adding an extra layer of protection for sensitive data during transmission. This feature is optional, allowing users to tailor the level of security based on their specific requirements.
 
 :::caution
-Agents must have a unique name for each user; otherwise, a new agent with the same name will be created, and the old agent will be removed. Due to the nature of auto-reconnection, the old agent will attempt to reconnect to the gateway, causing the new agent to be removed, creating a loop of reconnection. To avoid this, each agent must have a unique name for each user.
+Agents must have a unique name for each user; otherwise, if a new agent connects with the same name again, the old agent will be disconnected.
 :::
 
 ## Sample Configuration
