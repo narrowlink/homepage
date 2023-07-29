@@ -53,25 +53,25 @@ Token generator is a minimal component of Narrowlink that is responsible for gen
     uid: 00000000-0000-0000-0000-000000000000 # agent uid, please use a unique uid for each user
     name: agent_name_3 # agent name, it must be the same name as the agent name in the agent token
     exp: 1710227806 # expiration time in seconds since epoch
-    connect: # list of the services that this agent will publish
-      narrow.host: # domain name
-        addr: # the address that the agent will connect to publish the service
-          - 127.0.0.1 # ip address or domain name
-          - 8080 # port
+    publish_hosts: # list of the services that this agent will publish
+    - host: narrow.host # domain name
+      port: 0 # gateway's service port, 0 means any port
+      connect: # the address that the agent will connect to publish the service
+        host: 127.0.0.1 # ip address or domain name
+        port: 80 # port
         protocol: HTTP # protocol
-      me.narrow.host: # domain name
-        addr: # the address that the agent will connect to publish the service
-          - narrow.host # ip address or domain name
-          - 80 # port
-        protocol: HTTP # protocol
-
+    - host: tls.narrow.host # domain name
+      port: 0 # gateway's service port, 0 means any port
+      connect: # the address that the agent will connect to publish the service
+        host: 127.0.0.1 # ip address or domain name
+        port: 443 # port
+        protocol: TCP # protocol, TCP means it acts as a SNI proxy
 ```
 
 ## A complete example
 
 ```yaml
-
-secret: [2,0,2,3,0,8,1,8] # The secret for signing tokens, It must be the same as the gateway token secret, it is as byte array
+secret: [2,0,2,3] # The secret for signing tokens, It must be the same as the gateway token secret, it is as byte array
 tokens: # list of tokens
   - !Client # client token
     uid: 00000000-0000-0000-0000-000000000000 # client uid, please use a unique uid for each user
@@ -117,15 +117,17 @@ tokens: # list of tokens
     uid: 00000000-0000-0000-0000-000000000000 # agent uid, please use a unique uid for each user
     name: agent_name_3 # agent name, it must be the same name as the agent name in the agent token
     exp: 1710227806 # expiration time in seconds since epoch
-    connect: # list of the services that this agent will publish
-      narrow.host: # domain name
-        addr: # the address that the agent will connect to publish the service
-          - 127.0.0.1 # ip address or domain name
-          - 8080 # port
+    publish_hosts: # list of the services that this agent will publish
+    - host: narrow.host # domain name
+      port: 0 # gateway's service port, 0 means any port
+      connect: # the address that the agent will connect to publish the service
+        host: 127.0.0.1 # ip address or domain name
+        port: 80 # port
         protocol: HTTP # protocol
-      me.narrow.host: # domain name
-        addr: # the address that the agent will connect to publish the service
-          - narrow.host # ip address or domain name
-          - 80 # port
-        protocol: HTTP # protocol
+    - host: tls.narrow.host # domain name
+      port: 0 # gateway's service port, 0 means any port
+      connect: # the address that the agent will connect to publish the service
+        host: 127.0.0.1 # ip address or domain name
+        port: 443 # port
+        protocol: TCP # protocol, TCP means it acts as a SNI proxy
 ```

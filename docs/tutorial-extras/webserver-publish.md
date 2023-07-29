@@ -23,15 +23,18 @@ tokens: # list of tokens
     name: agent_name # agent name, it must be the same name as the agent name in the agent token
     exp: 1710227806 # expiration time in seconds since epoch (Monday, January 1, 2024 0:00:00 GMT)
     connect: # list of the services that this agent will publish
-      first.domain.ltd: # domain name
-        addr: # the address that the agent will connect to publish the service
-          - 127.0.0.1 # ip address or domain name
-          - 8080 # port
+    publish_hosts: # list of the services that this agent will publish
+    - host: first.domain.ltd # domain name
+      port: 0 # gateway's service port, 0 means any port
+      connect: # the address that the agent will connect to publish the service
+        host: 127.0.0.1 # ip address or domain name
+        port: 8080 # port
         protocol: HTTP # protocol
-      second.domain.ltd: # Second domain name if needed
-        addr: # the address that the agent will connect to publish the service
-          - narrow.host # ip address or domain name
-          - 443 # port
+    - host: second.domain.ltd # domain name
+      port: 0 # gateway's service port, 0 means any port
+      connect: # the address that the agent will connect to publish the service
+        host: narrow.host # ip address or domain name
+        port: 443 # port
         protocol: HTTPS # protocol
 ```
 
