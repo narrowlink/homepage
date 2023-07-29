@@ -13,11 +13,11 @@ Narrowlink is a secure, open-source, and versatile platform for enabling secure 
 
 ## Use Cases of Narrowlink
 
-- **[Port forwarding without having public IP address](/docs/tutorial-extras/port-forwarding)** - Imagine you have a Windows-based computer in your home network, and you want to access it via RDP from your laptop using a shared hotspot from your mobile network. In this case, both machines cannot directly reach each other, nor do they have public IP addresses. Narrowlink allows you to establish port forwarding between them, enabling you to access your Windows computer from your laptop.
+- **[Port Forwarding without a Public IP Address](/docs/tutorial-extras/port-forwarding)** - Imagine you have a Windows-based computer in your home network, and you want to access it via RDP from your laptop using a shared hotspot from your mobile network. In this case, both machines cannot directly reach each other, nor do they have public IP addresses. Narrowlink allows you to establish port forwarding between them, enabling you to access your Windows computer from your laptop.
 
-- **[Sharing internet Access](/docs/tutorial-extras/share-network-access)** - If you need to work from home and access your company's internal network, which only allows access from inside the network, you can install the Narrowlink agent on your computer located within the company's premises and use its internet access[^1].
+- **[Sharing Internet Access](/docs/tutorial-extras/share-network-access)** - If you need to work from home and access your company's internal network, which only allows access from inside the network, you can install the Narrowlink agent on your computer located within the company's premises and use its internet access[^1].
 
-- **[Publish your local webserver](docs/tutorial-extras/webserver-publish)** - Suppose you have a webserver running on your local network that you want to make accessible on the internet. If your ISP doesn't provide you with a public IP address or you wish to let others publish their webservers on your public IP address from their local networks, Narrowlink can help you publish your webserver to the internet.
+- **[Publishing Your Local Webserver](docs/tutorial-extras/webserver-publish)** - Suppose you have a webserver running on your local network that you want to make accessible on the internet. If your ISP doesn't provide you with a public IP address or you wish to let others publish their webservers on your public IP address from their local networks, Narrowlink can help you publish your webserver to the internet.
 
 
 ## Key Features
