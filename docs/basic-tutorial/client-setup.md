@@ -5,7 +5,7 @@ keywords: [Client, Narrowlink, Narrow, Link, Networking, Internet, Security, Pri
 ---
 
 # Client Setup
-In this section, you will learn how to set up a client using Narrowlink. Please note that this section covers only the basic configuration of the client. For more advanced configurations, such as integrating with SSH or VPN, please refer to the [extended tutorial](/docs/extended-tutorial/).
+In this section, you will learn how to set up a client using Narrowlink. Please note that this section covers only the basic configuration of the client. For more advanced configurations, such as integrating with SSH or VPN, please refer to the [extended tutorial](/docs/category/extended-tutorial/).
 
 ## Create a Token
 

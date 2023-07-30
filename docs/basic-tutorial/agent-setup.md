@@ -6,7 +6,7 @@ keywords: [Agent, Narrowlink, Narrow, Link, Networking, Internet, Security, Priv
 
 # Agent Setup
 
-In this section, we will show you how to set up an agent using Narrowlink. Please note that this section covers only the basic configuration of the agent. For more advanced configurations, such as publishing a webserver or using an SNI proxy, please refer to the [extended tutorial](/docs/extended-tutorial).
+In this section, we will show you how to set up an agent using Narrowlink. Please note that this section covers only the basic configuration of the agent. For more advanced configurations, such as publishing a webserver or using an SNI proxy, please refer to the [extended tutorial](/docs/category/extended-tutorial).
 
 To configure the agent, you first need to create a token using the [Token Generator](/docs/token-generator) component.
 ## Create a Token
