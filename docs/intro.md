@@ -1,6 +1,6 @@
 ---
 sidebar_position: 1
-description: Narrowlink is a self-hosted, open-source, and secure networking solution that allows you to access your devices and services behind NAT and firewall without port forwarding and public IP address.
+description: What is Narrowlink? What are its use cases? What are its key features? What are its requirements?
 keywords: [Narrowlink, Narrow, Link, Networking, Internet, Security, Privacy, Open Source, Self-hosted, Tutorial, How-to, Guide, Nat, Firewall, Proxy, Reverse Proxy, Tunnel]
 ---
 
