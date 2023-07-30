@@ -36,7 +36,7 @@ export default function Home() {
     <Layout
       // title={`${siteConfig.title}`}
       title={`A secure and borderless network Swiss Army Knife`}
-      description="Narrowlink is a self-hosted, open-source, and secure networking solution that allows you to publish and access your devices and services behind NAT and firewall without classic port forwarding and public IP address.">
+      description="Narrowlink is a networking platform that allows you to publish and access your devices and services behind NAT and firewall without public IP address.">
       <HomepageHeader />
       <main>
         <HomepageFeatures />
