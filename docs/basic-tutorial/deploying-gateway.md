@@ -6,13 +6,15 @@ keywords: [Deploy Gateway, Gateway, Agent, Client, Narrowlink, Narrow, Link, Net
 
 # Deploying Gateway
 
-In this tutorial, you will need a valid IP address on the internet and a domain name to configure auto certificate issuance.
+In this tutorial, we will guide you through the process of deploying the gateway using Narrowlink. Before you begin, please ensure that you have a valid IP address on the internet and a domain name to configure automatic certificate issuance. If you don't have a valid domain name, you can use the Ws[^1] protocol to run the gateway without TLS. However, we don't recommend this configuration.
 
 :::info
-You have the option to deploy the gateway with or without the TLS protocol. However, we highly recommend running it with TLS whenever possible. The gateway can automatically manage certificate issuance for itself and the publishing hosts. Having a valid domain name is mandatory in this case. However, if you don't have access to a valid domain or have any other reasons, you can use your own certificate or run it without TLS. If you encounter any other configurations not covered in the basic tutorial, please refer to the [Gateway documentation](/docs/gateway) for further assistance.
+If you plan to use an already deployed gateway, you can skip this step and proceed to the next one to deploy the [agent setup](/docs/basic-tutorial/agent-setup).
 :::
 
-Once you have installed the gateway, you need to configure the expected services. Create a file named `gateway.yaml` in the folder where you will run the gateway and paste the following content into it:
+To start the deployment process, make sure your domain name is correctly pointing to the IP address of your server, and that ports `80` and `443` are open. Once you've confirmed these requirements, you'll need to configure Ws and Wss services with Let's Encrypt to enable automatic certificate issuance in the Narrowlink gateway by following the steps below.
+
+Create a file named `gateway.yaml` in the folder where you'll run the gateway, and paste the following content into it:
 
 ```yaml
 name: basic-tutorial # name of the gateway, it currently has no effect
@@ -30,12 +32,11 @@ services: # list of services
   listen_addr: "0.0.0.0:80" # address to listen to
 ```
 
-:::note
+:::caution
 Please note that the `secret` should be your desired strong key, which must be at least 8 bytes long and kept secret. This key is used to authenticate clients and agents. The key must be presented as a sequence of bytes in either decimal or hex format. For example, the key `strong` in the above configuration is equivalent to `115,116,114,111,110,103`. You can use [CyberChef](https://gchq.github.io/CyberChef/#recipe=To_Decimal('Comma',false)&input=c3Ryb25n) to convert your key to the desired format.
-
 :::
 
-Next, you need to set an A record for your domain to point to the IP address of your server and update the domains field in the configuration file accordingly. If you have multiple domains, you can add them to the list. Also, update the email address in the email field with your own email address. It will be used to register an account with Let's Encrypt for issuing certificates for your domain.
+Next, set your domain name in the domains field. If you have multiple domains, you can add them as a list. Also, update the email address in the email field with your own email address, as it will be used to register an account with Let's Encrypt for issuing certificates for your domain.
 
 Now, you can run the gateway with the following command. If you are running the gateway without root access in Linux, use:
 
@@ -49,4 +50,6 @@ If you are running the gateway with root/superuser access, use the following com
 narrowlink-gateway
 ```
 
-That's it! You have successfully deployed the gateway. You can now proceed to the next step to deploy the agent.
+That's it! You have successfully deployed the gateway. Now you can proceed to the next step to deploy the agent.
+
+[^1]: Ws is a websocket protocol without TLS. You can learn more about its setup in the [Gateway documentation](/docs/gateway).
