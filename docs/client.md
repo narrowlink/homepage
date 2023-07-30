@@ -50,15 +50,15 @@ Windows: C:\Users\<username>\AppData\Roaming\narrowlink\client.yaml
 
 Here are some practical examples of how you can use Narrowlink client:
 
-- [Setting up a local proxy server](/docs/tutorial-extras/share-network-access/) to share internet access of another computer behind a restricted NAT network:
+- [Setting up a local proxy server](/docs/extended-tutorial/share-network-access/) to share internet access of another computer behind a restricted NAT network:
 
 `narrowlink proxy -n office 192.168.1.100:8080`
 
-- [Port forwarding](/docs/tutorial-extras/port-forwarding/) to connect to a remote desktop service (RDP):
+- [Port forwarding](/docs/extended-tutorial/port-forwarding/) to connect to a remote desktop service (RDP):
 
 `narrowlink forward -n office -l 127.0.0.1:3389 127.0.0.1:3389`
 
-- [Connecting to a SSH](/docs/tutorial-extras/ssh-integration/) server:
+- [Connecting to a SSH](/docs/extended-tutorial/ssh-integration/) server:
 
 ```bash
 cat ~/.ssh/config
