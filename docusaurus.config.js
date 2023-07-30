@@ -70,7 +70,7 @@ const config = {
       announcementBar: {
         id: 'support_us',
         content:
-          'This is a pre-released version of the Narrowlink documentation. If you come across any issues or have suggestions for improvements, please feel free to create an issue or pull request (PR) on our GitHub repository.',
+          'This is a pre-released version of the Narrowlink documentation.',
         backgroundColor: '#1b6f77',
         textColor: '#ffffff',
         isCloseable: false,
