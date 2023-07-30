@@ -44,7 +44,7 @@ narrowlink-agent
 ```
 
 :::note
-This is the basic configuration for the agent. Please referee [webserver-publish](/docs/tutorial-extras/webserver-publish/), [Load Balancing](/docs/tutorial-extras/load-balancing), and [End-to-end Encryption](http://localhost:3000/docs/tutorial-extras/end-to-end-encryption) sections if you wish use these features.
+This is the basic configuration for the agent. Please referee [webserver-publish](/docs/extended-tutorial/webserver-publish/), [Load Balancing](/docs/extended-tutorial/load-balancing), and [End-to-end Encryption](/docs/extended-tutorial/end-to-end-encryption) sections if you wish use these features.
 :::
 
 
