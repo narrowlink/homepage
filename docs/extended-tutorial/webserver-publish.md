@@ -38,9 +38,8 @@ tokens: # list of tokens
         protocol: HTTPS # protocol
 ```
 
-:::note
-The token must be the same as the agent token. Also, the agent name must be the same as the agent name in the agent token.
-:::
+
+The `uid` and `name` fields must be the same as the `uid` and `name` in the agent token. Once a request is received from the gateway, it automatically inserts the `NL-Connecting-IP` header to the request. This header contains the IP address of the client. You can use this header to detect the IP address of the client.
 
 :::tip
 You can use a wildcard in the domain name to publish multiple services without reconfiguring the DNS server every time. For example, you can use `*.domain.ltd` to publish all subdomains of `domain.ltd`.
