@@ -1,0 +1,9 @@
+position: 4
+label: 'Extended Tutorial'
+collapsible: true
+collapsed: false
+className: red
+link:
+  type: generated-index
+  title: Extended Tutorial
+  description: Welcome to our extended tutorial section, where you'll explore Narrowlink's advanced features. While each section can be read independently, you'll benefit most by following them in order.

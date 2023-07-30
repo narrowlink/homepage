@@ -53,7 +53,7 @@ Narrowlink is currently a self-hosted solution, which means you need a server to
 Narrowlink must not be used for any illegal activities. We are committed to implementing transparency features to prevent any misuse or engagement in unlawful practices as much as possible.
 :::
 
-If you're interested in using Narrowlink, start by exploring the [architecture](/docs/architecture) to gain a better understanding of how Narrowlink works. Then, follow our [basic tutorial](/docs/category/tutorial---basics) to learn how to set up a basic Narrowlink network. Finally, you can proceed with our [extended tutorial](docs/category/tutorial---extras) to explore advanced scenarios and use Narrowlink to its full potential.
+If you're interested in using Narrowlink, start by exploring the [architecture](/docs/architecture) to gain a better understanding of how Narrowlink works. Then, follow our [basic tutorial](/docs/category/basic-tutorial) to learn how to set up a basic Narrowlink network. Finally, you can proceed with our [extended tutorial](/docs/category/extended-tutorial) to explore advanced scenarios and use Narrowlink to its full potential.
 
 
 **Footnotes:**
