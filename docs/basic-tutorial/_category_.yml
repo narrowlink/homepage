@@ -6,4 +6,6 @@ className: red
 link:
   type: generated-index
   title: Basic tutorial overview
+  description: Narrowlink's basic tutorial section - Learn to set up the fundamental Narrowlink configuration
+customProps:
   description: Welcome to our basic tutorial section, where you'll learn to set up the fundamental Narrowlink configuration. This tutorial is designed to be followed sequentially, and it assumes familiarity with Narrowlink's architecture and workings as described in the previous sections.
