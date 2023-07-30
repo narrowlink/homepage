@@ -18,7 +18,7 @@ By following the tutorial, you have accomplished the following:
 
 Throughout the basic tutorial, you have learned how to use Narrowlink to connect devices and services securely.
 
-To further enhance your understanding and expand your capabilities with Narrowlink, we recommend exploring the [Tutorial - Extra](/docs/category/tutorial---extras) section and documentation available. You can dive into topics such as advanced configurations, security best practices, integrating with other tools, and leveraging Narrowlink's full potential for your specific use cases.
+To further enhance your understanding and expand your capabilities with Narrowlink, we recommend exploring the [Extended Tutorial](/docs/category/extended-tutorial/) section and documentation available. You can dive into topics such as advanced configurations, security best practices, integrating with other tools, and leveraging Narrowlink's full potential for your specific use cases.
 
 Remember, Narrowlink is a powerful tool for connecting devices and services securely, regardless of network restrictions. It offers flexibility, security, and ease of use, empowering you to build robust and efficient solutions.
 

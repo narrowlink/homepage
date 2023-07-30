@@ -64,6 +64,6 @@ Clients can be restricted to access specific agents and their destinations by us
 
 :::
 
-That's it! You have successfully configured the client. Now, you can set up a local proxy server to route your traffic through the agent. For more information, please refer to the Share Network Access section. Additionally, you can check the [Tutorial - Extra](/docs/category/tutorial---extras/) or [Client](/docs/client) sections in the documentation for more information.
+That's it! You have successfully configured the client. Now, you can set up a local proxy server to route your traffic through the agent. For more information, please refer to the Share Network Access section. Additionally, you can check the [Extended Tutorial](/docs/category/extended-tutorial/) or [Client](/docs/client) sections in the documentation for more information.
 
 That's it! You have successfully configured the client. Now, you can use setup a local proxy server to route your traffic through the agent. Please refer to the [Share Network Access](/docs/tutorial-extras/share-network-access) section for more information. Or you can check the Extract or Client documentation for more information about the client.
