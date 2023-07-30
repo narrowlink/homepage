@@ -9,7 +9,7 @@ keywords: [SNI proxy, Webserver, Gateway, Agent, Client, Narrowlink, Narrow, Lin
 In some scenarios, you may need to publish a web server and prefer not to trust the gateway with decrypting your TLS communication and managing your private key. In such cases, Narrowlink offers a powerful feature called SNI (Server Name Indication) proxy. With SNI proxy, you can publish your web server without TLS offloading, leaving the TLS communication and cryptographic operations to be handled directly by the agent. This provides an added layer of security and control over your agent's web services.
 
 :::note
-Please note that when using TLS offloading, the agent may not be able to detect the remote IP address of the client. In such cases, you can use the `X-Forwarded-For` header to detect the remote IP address of the client.
+Please note that when using TLS offloading, the agent may not be able to detect the remote IP address of the client. In such cases, you can use the `NL-Connecting-IP` header to detect the remote IP address of the client.
 :::
 
 To set up the SNI proxy, you need to create a special publish token that instructs the gateway to forward communication to the agent at the TLS layer. Here's how you can configure your publish token:
