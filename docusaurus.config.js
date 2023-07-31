@@ -113,17 +113,17 @@ const config = {
           {
             title: 'Community',
             items: [
+              // {
+              //   label: 'Stack Overflow',
+              //   href: 'https://stackoverflow.com/questions/tagged/narrowlink',
+              // },
               {
-                label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/narrowlink',
+                label: 'Twitter',
+                href: 'https://twitter.com/NarrowlinkCom',
               },
               {
                 label: 'Telegram',
                 href: 'https://t.me/narrowlink',
-              },
-              {
-                label: 'Threads',
-                href: 'https://threads.net/narrowlink',
               },
             ],
           },
@@ -133,7 +133,7 @@ const config = {
 
               {
                 label: 'GitHub',
-                href: 'https://github.com/narrowlink',
+                href: 'https://github.com/narrowlink/narrowlink',
               },
             ],
           },
