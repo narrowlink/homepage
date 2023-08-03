@@ -57,8 +57,12 @@ Replace the `token` field with the obtained token, and replace the `gateway` fie
 
 Finally, run the client with the following command to get a list of the agents:
 
+
 ```bash
-sh$ narrowlink list
+narrowlink list
+```
+Result:
+```bash
 agent_name
   Address: "127.0.0.1:44236",
   Connection Ping: 1ms
