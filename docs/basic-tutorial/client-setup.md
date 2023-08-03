@@ -58,13 +58,10 @@ Replace the `token` field with the obtained token, and replace the `gateway` fie
 Finally, run the client with the following command to get a list of the agents:
 
 ```bash
-narrowlink list
-AgentInfo {
-    name: "agent_name",
-    socket_addr: "127.0.0.1:44236",
-    since: 2023-0-1T0:0:0-00:00,
-    ping: 1,
-}
+sh$ narrowlink list
+agent_name
+  Address: "127.0.0.1:44236",
+  Connection Ping: 1ms
 ```
 
 You can also use `narrowlink list -h` to get more information about the command or use `narrowlink -h` to get a list of all commands.
