@@ -22,7 +22,7 @@ Whether you are a network administrator, developer, or an open-source enthusiast
 ## Sample Configuration
 
 ```yaml
-gateway: gateway.domain.tld:443 # address of the gateway
+gateway: gateway.domain.example:443 # address of the gateway
 token: eyJ0eX....kNHYQ_4 # token for authentication
 service_type: Wss # Wss or Ws (default: Wss)
 ```

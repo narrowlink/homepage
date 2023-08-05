@@ -42,7 +42,7 @@ narrowlink-token-generator token-generator.yaml
 
 Now, you can configure the agent by creating a file named `agent.yaml` in the folder where you will run the agent and insert the following content:
 ```yaml
-gateway: gateway.domain.tld:443 # address of the gateway
+gateway: gateway.domain.example:443 # address of the gateway
 token: eyJ0eX....kNHYQ_4 # token for authentication
 ```
 

@@ -24,13 +24,13 @@ tokens: # list of tokens
     exp: 1710227806 # expiration time in seconds since epoch (Monday, January 1, 2024 0:00:00 GMT)
     connect: # list of the services that this agent will publish
     publish_hosts: # list of the services that this agent will publish
-    - host: first.domain.ltd # domain name
+    - host: first.domain.example # domain name
       port: 0 # gateway's service port, 0 means any port
       connect: # the address that the agent will connect to publish the service
         host: 127.0.0.1 # ip address or domain name
         port: 8080 # port
         protocol: HTTP # protocol
-    - host: second.domain.ltd # domain name
+    - host: second.domain.example # domain name
       port: 0 # gateway's service port, 0 means any port
       connect: # the address that the agent will connect to publish the service
         host: narrow.host # ip address or domain name
@@ -42,7 +42,8 @@ tokens: # list of tokens
 The `uid` and `name` fields must be the same as the `uid` and `name` in the agent token. Once a request is received from the gateway, it automatically inserts the `NL-Connecting-IP` header to the request. This header contains the IP address of the client. You can use this header to detect the IP address of the client.
 
 :::tip
-You can use a wildcard in the domain name to publish multiple services without reconfiguring the DNS server every time. For example, you can use `*.domain.ltd` to publish all subdomains of `domain.ltd`.
+You can use a wildcard in the domain name to publish multiple services without reconfiguring the DNS server every time. For example, you can use `*.domain.example` to publish all subdomains of 
+`domain.example`.
 :::
 
 After generating the publish token, you need to add the token to the agent configuration file:

@@ -49,7 +49,7 @@ narrowlink-token-generator token-generator.yaml
 Next, configure the client by creating a file named `client.yaml` in the folder where you will run the client, and insert the following content:
 
 ```yaml
-gateway: gateway.domain.tld:443 # Address of the gateway
+gateway: gateway.domain.example:443 # Address of the gateway
 token: eyJ0eX....kNHYQ_4 # Token for authentication
 ```
 

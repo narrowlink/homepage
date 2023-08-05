@@ -27,13 +27,13 @@ tokens: # list of tokens
     exp: 1710227806 # expiration time in seconds since epoch (Monday, January 1, 2024 0:00:00 GMT)
     connect: # list of the services that this agent will publish
     publish_hosts: # list of the services that this agent will publish
-    - host: tls.domain.ltd # domain name
+    - host: tls.domain.example # domain name
       port: 443 # gateway's service port, 0 means any port
       connect: # the address that the agent will connect to publish the service
         host: narrow.host # ip address or domain name
         port: 443 # port
         protocol: TCP # protocol
-    - host: tls.domain.ltd # domain name
+    - host: tls.domain.example # domain name
       port: 80 # gateway's service port, 0 means any port
       connect: # the address that the agent will connect to publish the service
         host: narrow.host # ip address or domain name

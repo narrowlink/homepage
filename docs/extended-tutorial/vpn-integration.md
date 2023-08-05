@@ -52,7 +52,7 @@ Then you need to use a configuration file for sing-box like the following to cre
           80
         ],
         "domain": [
-          "gateway.domain.ltd"
+          "gateway.domain.example"
         ],
         "outbound": "direct"
       }
@@ -62,7 +62,7 @@ Then you need to use a configuration file for sing-box like the following to cre
 }
 ```
 
-please note that you need to replace `gateway.domain.ltd` with the actual address of the gateway.
+please note that you need to replace `gateway.domain.example` with the actual address of the gateway.
 
 You can use the following command to run sing-box with the above configuration file:
 

@@ -19,7 +19,7 @@ Agents must have a unique name for each user; otherwise, if a new agent connects
 ## Sample Configuration
 
 ```yaml
-gateway: gateway.domain.tld:443 # address of the gateway
+gateway: gateway.domain.example:443 # address of the gateway
 token: eyJ0eX....kNHYQ_4 # token for authentication
 publish: eyJ0eX....kNHYQ_4 # token for publishing webserver (optional)
 service_type: Wss # Wss or Ws (default: Wss)
