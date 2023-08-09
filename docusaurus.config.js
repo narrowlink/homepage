@@ -51,30 +51,33 @@ const config = {
           editUrl:
             'https://github.com/narrowlink/homepage/tree/main/',
         },
-        blog: false,
+        blog: {
+          blogTitle: 'Narrowlink blog!',
+          blogSidebarCount: 'ALL',
+        },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
-        }, 
+        },
         gtag: {
           trackingID: 'G-C3JMEK1LYG',
           anonymizeIP: true,
         },
       }),
     ],
-    
+
   ],
 
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
-      announcementBar: {
-        id: 'support_us',
-        content:
-          'This is a pre-released version of the Narrowlink documentation.',
-        backgroundColor: '#1b6f77',
-        textColor: '#ffffff',
-        isCloseable: false,
-      },
+      // announcementBar: {
+      //   id: 'support_us',
+      //   content:
+      //     'This is a pre-released version of the Narrowlink documentation.',
+      //   backgroundColor: '#1b6f77',
+      //   textColor: '#ffffff',
+      //   isCloseable: false,
+      // },
       // metadata: [{ name: 'tag', content: 'cooking' }],
       // Replace with your project's social card
       image: 'img/narrowlink-social-card.jpg',
@@ -96,6 +99,7 @@ const config = {
             label: 'GitHub',
             position: 'right',
           },
+          { to: 'blog', label: 'Blog', position: 'left' }
         ],
       },
       footer: {
@@ -145,7 +149,7 @@ const config = {
         darkTheme: darkCodeTheme,
       },
       colorMode: {
-        defaultMode: 'dark',
+        defaultMode: 'light',
         disableSwitch: false,
         respectPrefersColorScheme: true,
       },
