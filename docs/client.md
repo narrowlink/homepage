@@ -1,10 +1,10 @@
 ---
-sidebar_position: 5
+sidebar_position: 4
 description: How does Narrowlink client work?
 keywords: [Client, Narrowlink, Narrow, Link, Networking, Internet, Security, Privacy, Open Source, Self-hosted, Tutorial, How-to, Guide, Nat, Firewall, Proxy, Reverse Proxy, Tunnel]
 ---
 
-# Narrowlink Client
+# Client
 
 The Narrowlink client is a crucial component that acts as an interface for sending and receiving packets to and from agents, forwarding them to the Narrowlink network infrastructure. Installed on end user devices, this component facilitates seamless communication with the Agent component. Clients interact with the gateway to securely access resources located behind firewalls, enabling remote access from anywhere.
 
@@ -20,7 +20,7 @@ The Narrowlink client is responsible for the following tasks:
 
 ## Configuration
 
-The client needs to be configured with the address of the gateway and an authentication token. The token can be generated using the [Token Generator](/docs/token-generator) component.
+The client needs to be configured with the address of the gateway and a token. The token can be generated using the [Token Generator](/docs/token-generator) component.
 
 The configuration comprises the following parameters as a YAML file:
 
