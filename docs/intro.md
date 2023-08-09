@@ -71,9 +71,6 @@ Narrowlink must not be used for any illegal activities. We are committed to impl
 
 If you're interested in using Narrowlink follow our [basic tutorial](/docs/category/basic-tutorial) to learn how to set up a basic Narrowlink network. Then, you can proceed with our [extended tutorial](/docs/category/extended-tutorial) to explore advanced scenarios and use Narrowlink to its full potential.
 
-
-Happy networking with Narrowlink!
-
 **Footnotes:**
 
 [^1]: Please ensure you have permission from your company and comply with your company's security policies before sharing internet access using Narrowlink. Narrowlink is not responsible for any misuse of the software.
