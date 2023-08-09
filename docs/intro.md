@@ -1,6 +1,6 @@
 ---
 sidebar_position: 1
-description: What is Narrowlink? What are its use cases? What are its key features? What are its requirements?
+description: What is Narrowlink? Narrowlink use cases? How does Narrowlink work? Narrowlink key features? Narrowlink requirements?
 keywords: [Narrowlink, Narrow, Link, Networking, Internet, Security, Privacy, Open Source, Self-hosted, Tutorial, How-to, Guide, Nat, Firewall, Proxy, Reverse Proxy, Tunnel]
 ---
 
@@ -18,6 +18,22 @@ Narrowlink is a secure, open-source, and versatile platform for enabling secure 
 - **[Sharing Internet Access](/docs/extended-tutorial/share-network-access)** - If you need to work from home and access your company's internal network, which only allows access from inside the network, you can install the Narrowlink agent on your computer located within the company's premises and use its internet access[^1].
 
 - **[Publishing Your Local Webserver](docs/extended-tutorial/webserver-publish)** - Suppose you have a webserver running on your local network that you want to make accessible on the internet. If your ISP doesn't provide you with a public IP address or you wish to let others publish their webservers on your public IP address from their local networks, Narrowlink can help you publish your webserver to the internet.
+
+## Architecture
+
+Narrowlink consists of three main components: the Gateway, Agents, and Clients.
+
+![Narrowlink System Architecture](/img/Diagram.svg)
+
+### [Gateway]
+
+The gateway component serves as the central hub of the Narrowlink network, responsible for routing packets between clients, agents, and browsers. It is deployed on an internet-facing server with a public IP address, functioning as the entry point to the Narrowlink network. The gateway does not have any types database to define users, agents, or services. Instead, it relies on the agent's and client's [tokens](/docs/token-generator) to identify them. The gateway performs various tasks, including authentication, routing, and load balancing. Refer to [Gateway] for further details.
+
+### [Agent]
+The agent component acts as a proxy, managing packets on behalf of clients through the gateway, and forwarding them to or from targeted hosts within the local network. It plays a pivotal role in ensuring proper packet forwarding between browsers or clients through the gateway to the intended hosts in restricted or NAT networks. For more information, see [Agent].
+
+### [Client]
+The client component provide an interface to sending and receiving packets to and from agents on your local machine. It provides various functionalities, including port forwarding, proxying, and connecting to remote services. More details are available in [Client].
 
 
 ## Key Features
@@ -53,8 +69,10 @@ Narrowlink is currently a self-hosted solution, which means you need a server to
 Narrowlink must not be used for any illegal activities. We are committed to implementing transparency features to prevent any misuse or engagement in unlawful practices as much as possible.
 :::
 
-If you're interested in using Narrowlink, start by exploring the [architecture](/docs/architecture) to gain a better understanding of how Narrowlink works. Then, follow our [basic tutorial](/docs/category/basic-tutorial) to learn how to set up a basic Narrowlink network. Finally, you can proceed with our [extended tutorial](/docs/category/extended-tutorial) to explore advanced scenarios and use Narrowlink to its full potential.
+If you're interested in using Narrowlink follow our [basic tutorial](/docs/category/basic-tutorial) to learn how to set up a basic Narrowlink network. Then, you can proceed with our [extended tutorial](/docs/category/extended-tutorial) to explore advanced scenarios and use Narrowlink to its full potential.
 
+
+Happy networking with Narrowlink!
 
 **Footnotes:**
 
@@ -65,3 +83,7 @@ If you're interested in using Narrowlink, start by exploring the [architecture](
 [^3]: The number of users supported is limited by the hardware resources of the gateway and the number of concurrent connections.
 
 [^4]: If you cannot afford to buy a server, are unable to manage one, or want to try Narrowlink without the technical overhead, we offer a limited number of free accounts hosted on our servers. Feel free to inquire about this offer by sending an email to tr<!-- mail@address -->y@nar<!-- @host -->rowlink.com. However, please note that we cannot guarantee providing an account for everyone due to capacity limitations.
+
+[Client]: /docs/client
+[Agent]: /docs/agent
+[Gateway]: /docs/gateway

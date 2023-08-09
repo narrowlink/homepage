@@ -5,18 +5,21 @@ keywords: [Agent, Gateway, Client, Narrowlink, Narrow, Link, Networking, Interne
 ---
 
 # Agent
+The agent component acts as a proxy, representing the client by forwarding packets to and from targeted hosts within the local network. Its role is pivotal in ensuring accurate packet forwarding between the client and the designated hosts.
 
-The agent is an application that runs on your target devices, providing remote access capabilities. Its main responsibilities include forwarding requests to the gateway and receiving responses from it. The agent also handles the encryption and decryption of both incoming requests and outgoing responses.
+Agents can be installed on a variety of devices, including routers, mobile devices, personal computers, or cloud-based virtual machines, depending on the specific use case.
 
-Currently, the agent supports websockets over HTTP and HTTPS protocols as the transport layer, ensuring secure and efficient communication. Additionally, it offers a convenient feature where it can be configured to publish a webserver directly to the gateway, eliminating the need for client intervention. When a request for the published domain name is received by the gateway, it is forwarded to the agent, which then forwards it to the webserver for processing.
+Currently, the agent supports websockets via both HTTP and HTTPS protocols as the underlying transport layer, ensuring secure and efficient communication. Additionally, it offers a convenient capability: the ability to configure it for direct publication of a web server to the gateway. This eliminates the need for client intervention. When a request for the published domain name reaches the gateway, it is redirected to the agent, which then forwards it to the web server for processing.
 
-To further enhance security, the agent provides the option for end-to-end encryption of requests and responses, adding an extra layer of protection for sensitive data during transmission. This feature is optional, allowing users to tailor the level of security based on their specific requirements.
+To enhance security measures, the agent provides an option for end-to-end encryption of requests and responses. This introduces an additional layer of safeguarding for sensitive data during transmission. Importantly, this feature remains optional, granting users the flexibility to adjust the security level according to their specific requirements.
 
 :::caution
-Agents must have a unique name for each user; otherwise, if a new agent connects with the same name again, the old agent will be disconnected.
+Agents must have a unique name for each user. Otherwise, if a new agent connects with the same name, the old agent will be disconnected.
 :::
 
-## Sample Configuration
+## Configuration
+
+At minimum, the agent needs to be configured with the address of the gateway and a token. The token can be generated using the [Token Generator](/docs/token-generator) component. Additionally, the agent can be configured to publish a web server to the gateway; the publish token is a configuration element that the gateway uses to determine which domain should be published and mapped to which agent and host. Using the `key` is optional, and it is employed for end-to-end encryption.
 
 ```yaml
 gateway: gateway.domain.example:443 # address of the gateway
@@ -26,21 +29,27 @@ service_type: Wss # Wss or Ws (default: Wss)
 #key: "your_key" # key for end to end encryption (optional)%
 ```
 
-:::note
-Please note that the agent's configuration file must be located in the same folder as the agent executable file with the name `agent.yaml`.
+## Default Configuration Paths
 
-Alternatively, it can be found in the following paths:
+The agent can load configuration from a custom path using the `-c` or `--config` flag or from its default paths.
 
+The default paths are as follows:
+
+1. Next to the agent executable file with the name `agent.yaml`
+2. In the operating system's configuration directory within a folder named `.narrowlink`, with the file named `agent.yaml`
+
+Example path:
 ```bash
 $HOME/.narrowlink/agent.yaml
 ```
+3. In the operating system's configuration directory within a folder named `narrowlink`, with the file named `agent.yaml`
 
-or
+Configuration paths for different operating systems:
 
-```bash
-Linux: /home/<username>/.config/narrowlink/agent.yaml
-Mac: /Users/<username>/Library/Application Support/narrowlink/agent.yaml
-Windows: C:\Users\<username>\AppData\Roaming\narrowlink\agent.yaml
-```
+| OS | PATH |
+|:-:|:-:|
+| Linux | `/home/<username>/.config/narrowlink/agent.yaml` |
+| MacOS | `/home/<username>/.config/narrowlink/agent.yaml` |
+| Windows | `/home/<username>/.config/narrowlink/agent.yaml` |
 
-:::
+To explore more features and options, refer to the [Extended Tutorial](/docs/category/extended-tutorial) section or experiment with different command line options.
