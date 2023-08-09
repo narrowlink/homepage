@@ -1,7 +1,7 @@
 ---
 sidebar_position: 1
 description: Narrowlink vs. Tailscale - What's the difference?
-keywords: [Access Control]
+keywords: [Access Control, ACL, Proxy, Gateway, Tailscale, Narrowlink, VPN, WireGuard, Self-Hosted, Open Source, Security, Privacy, Internet Sharing, CDN, Publish Services, Network Performance, Efficiency]
 ---
 
 # Tailscale vs. Narrowlink
