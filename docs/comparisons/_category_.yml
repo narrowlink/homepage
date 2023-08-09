@@ -1,0 +1,9 @@
+position: 5
+label: 'Comparison With Other Tools'
+collapsible: true
+collapsed: false
+className: red
+link:
+  type: generated-index
+  title: Comparison With Other Tools
+  description: Comparisons - Learn more about Narrowlink's features and how it compares to other tools.

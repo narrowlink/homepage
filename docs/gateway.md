@@ -1,5 +1,5 @@
 ---
-sidebar_position: 5
+sidebar_position: 6
 description: How does Narrowlink gateway work?
 keywords: [Gateway, Narrowlink, Narrow, Link, Networking, Internet, Security, Privacy, Open Source, Self-hosted, Tutorial, How-to, Guide, Nat, Firewall, Proxy, Reverse Proxy, Tunnel, Rust, ACME, Let's Encrypt, TLS, SSL, WSS, WS, Websocket, Load Balancing, Access Control, Service Publication, Certificate Management, Secure Communication, Internet, Security, Privacy, Open Source, Self-hosted, Tutorial, How-to, Guide, Xchacha20-Poly1305, HMAC-SHA256]
 ---
