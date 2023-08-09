@@ -38,7 +38,7 @@ So let's get right to it!
 
 ## Narrowlink Use Cases
 
-Narrowlink serves diverse purposes. Here are a few examples:
+Narrowlink can be used mainly in three scenarios:
 
 - **Port Forwarding without Public IP**: When you need to connect devices in different networks without public IP addresses, Narrowlink enables port forwarding between devices, allowing remote access despite network restrictions.
 
