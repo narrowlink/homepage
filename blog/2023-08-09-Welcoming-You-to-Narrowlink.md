@@ -35,6 +35,17 @@ In this inaugural blog post, we'll dive deeper into:
 
 So let's get right to it!
 
+
+## Narrowlink Use Cases
+
+Narrowlink serves diverse purposes. Here are a few examples:
+
+- **Port Forwarding without Public IP**: When you need to connect devices in different networks without public IP addresses, Narrowlink enables port forwarding between devices, allowing remote access despite network restrictions.
+
+- **Sharing Internet Access**: Use Narrowlink to work remotely by installing the agent on a company computer. This lets you access your company's internal network from outside while using the computer's internet connection.
+
+- **Publishing Local Web Servers**: If you have a local web server and lack a public IP or want to host others' webservers on your IP, Narrowlink helps publish your web server on the internet, even without a dedicated public IP address.
+
 ## [Introducing Narrowlink](/docs/intro) - Next-Gen Remote Access
 
 Narrowlink is an entirely free and self-hosted solution engineered to enable seamless, secure communication between devices across restricted networks. It empowers you to easily connect, share access, and publish services across firewalls, NAT environments, and other network barriers that hindered remote interaction.
