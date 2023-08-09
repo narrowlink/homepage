@@ -68,7 +68,7 @@ Tailscale technically offers better network performance than Narrowlink due to i
 
 ## Efficiency
 
-Narrowlink has better efficiency in terms of the binary size, memory usage and CPU usage. Narrowlink is written in Rust. Tailscale is written in Go and C++ and uses the standard library and WireGuard library for most of its functionality. As an example, tailscale client binary size is 18MB while narrowlink with libc and tls library static linking is 3.5MB.
+Narrowlink has better efficiency in terms of the binary size, memory usage and CPU usage. Narrowlink is written in Rust. Tailscale is written in Go and C++ for most of its functionality. As an example, tailscale client binary size is 18MB while narrowlink with libc and tls library static linking is 3.5MB.
 
 ## Bottom Line
 
