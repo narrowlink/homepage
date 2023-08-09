@@ -38,14 +38,6 @@ If you're using Windows, please refer to the "[Other Installation Methods]" sect
 cargo install narrowlink-gateway narrowlink-agent narrowlink-client narrowlink-token-generator
 ```
 
-You can also install each component individually:
-
-### Agent
-
-```bash
-cargo install narrowlink-client
-``` -->
-
 ### Updating
 
 To update Narrowlink, you can add ```--force``` to the end of the command to force Cargo to reinstall the package:
