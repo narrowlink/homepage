@@ -95,7 +95,7 @@ const config = {
             label: 'Docs',
           },
           {
-            href: 'https://github.com/narrowlink',
+            href: 'https://github.com/narrowlink/narrowlink',
             label: 'GitHub',
             position: 'right',
           },
