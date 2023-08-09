@@ -14,6 +14,8 @@ The gateway component serves as the central hub of the Narrowlink network, respo
 - Issuing and managing TLS certificates for published services
 - Performing load balancing and redundancy
 
+The gateway can also be deployed behind a CDN service to enhance the performance of published services. In this case, you need to configure the CDN to connect to the gateway using the TLS protocol if you're using the `Wss` protocol. Moreover, you cannot use the SNI proxy feature and the `TlsAlpn01` challenge type for ACME anymore.
+
 ## Configuration
 
 The gateway must be configured with a secret key and a list of services. The secret key is used to authenticate clients and agents and must match the one used to generate tokens. The gateway currently provides two services: `Ws` and `Wss` for insecure and secure (TLS) websockets, respectively. Each service has a list of domains to which it should listen, along with a TLS configuration. The TLS configuration can be either `Acme` or `File`. The `Acme` configuration is used to automatically issue and manage TLS certificates using Let's Encrypt. The `File` configuration is used to load a TLS certificate from a file.
