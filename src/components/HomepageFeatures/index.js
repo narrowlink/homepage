@@ -28,7 +28,7 @@ const FeatureList = [
     // Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
     description: (
       <>
-        Publishing webservers on the internet through devices behind NAT and firewalls with secure TLS encryption and automatic certificate issuance.
+        Publishing webservers on the internet through devices behind NAT and firewalls with secure TLS encryption and automatic certificate provisioning.
       </>
     ),
   }, {

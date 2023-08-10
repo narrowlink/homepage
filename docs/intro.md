@@ -48,7 +48,7 @@ Narrowlink prioritizes security and aims to provide a versatile, secure access s
 
 - **User Management** - Narrowlink offers a user management system that allows you to create different user spaces. Each user's space enables clients to access the user's agents, with each client having its access control policies. As a result, you can provide services to an unlimited number of users using a single gateway[^3].
 
-- **Automatic Certificate Management** - Narrowlink leverages the ACME protocol to automatically generate and manage TLS certificates for published services. This feature enables you to issue or renew certificates before expiration using a Certificate Authority (CA) like [Let's Encrypt](https://letsencrypt.org/).
+- **Automatic Certificate Provisioning** - Narrowlink leverages the ACME protocol to automatically generate and manage TLS certificates for published services. This feature enables you to issue or renew certificates before expiration using a Certificate Authority (CA) like [Let's Encrypt](https://letsencrypt.org/).
 
 - **SNI Proxy** - Utilize the SNI proxy feature to prevent the gateway from decrypting your TLS traffic. Instead, your server on the agent will handle the TLS traffic. This option is ideal when you prefer not to fully trust the gateway or desire to use your own certificate for your services.
 
