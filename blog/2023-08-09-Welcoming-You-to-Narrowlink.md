@@ -108,9 +108,11 @@ Ready to get started with Narrowlink and experience the future of remote access?
 - [Installation](/docs/basic-tutorial/installation) - Available as precompiled binaries or build from source.
 - [Basic Tutorials](/docs/category/basic-tutorial) - Covers initial setup and core configurations.
 - [Extended Tutorials](/docs/category/extended-tutorial) - Explore advanced use cases and customization.
+- [Comparison With Other Tools](/docs/category/comparison-with-other-tools) - Compare Narrowlink with other tools.
 
 We sincerely hope you find Narrowlink as empowering as we do. Let's work together to drive remote access technology forward!
 
 Please connect with us if you ever have any questions. We're absolutely thrilled to have you join this [community](https://github.com/narrowlink/narrowlink/discussions).
 
 Onwards!
+
