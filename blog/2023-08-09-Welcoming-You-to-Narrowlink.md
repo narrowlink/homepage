@@ -44,7 +44,7 @@ Narrowlink can be used mainly in three scenarios:
 
 - **Sharing Internet Access**: Use Narrowlink to work remotely by installing the agent on a company computer. This lets you access your company's internal network from outside while using the computer's internet connection.
 
-- **Publishing Local Web Servers**: If you have a local web server and lack a public IP or want to host others' webservers on your IP, Narrowlink helps publish your web server on the internet, even without a dedicated public IP address. For example, (https://narrow.host)[https://narrow.host] has been published using Narrowlink.
+- **Publishing Local Web Servers**: If you have a local web server and lack a public IP or want to host others' webservers on your IP, Narrowlink helps publish your web server on the internet, even without a dedicated public IP address. For example, [https://narrow.host](https://narrow.host) has been published using Narrowlink.
 
 ## [Introducing Narrowlink](/docs/intro) - Next-Gen Remote Access
 
