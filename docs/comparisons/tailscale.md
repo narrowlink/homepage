@@ -7,9 +7,9 @@ keywords: [Access Control, ACL, Proxy, Gateway, Tailscale, Narrowlink, VPN, Wire
 
 # Tailscale vs. Narrowlink
 
-:::note
+:::tip
 
-If this is your first visit to this website, please take a moment to review the [introduction](/docs/intro) section to gain a basic understanding of Narrowlink. Then, reading this page will be more beneficial.
+If this is your first visit to this website, please take a moment to review the [Introduction](/docs/intro) section to gain a basic understanding of Narrowlink. Then, reading this page will be more beneficial.
 :::
 
 
