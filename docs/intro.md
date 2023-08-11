@@ -17,7 +17,7 @@ Narrowlink is a secure, open-source, and versatile platform for enabling secure 
 
 - **[Sharing Internet Access](/docs/extended-tutorial/share-network-access)** - If you need to work from home and access your company's internal network, which only allows access from inside the network, you can install the Narrowlink agent on your computer located within the company's premises and use its internet access[^1].
 
-- **[Publishing Your Local Webserver](docs/extended-tutorial/webserver-publish)** - Suppose you have a webserver running on your local network that you want to make accessible on the internet. If your ISP doesn't provide you with a public IP address or you wish to let others publish their webservers on your public IP address from their local networks, Narrowlink can help you publish your webserver to the internet.
+- **[Publishing Your Local Webserver](/docs/extended-tutorial/webserver-publish)** - Suppose you have a webserver running on your local network that you want to make accessible on the internet. If your ISP doesn't provide you with a public IP address or you wish to let others publish their webservers on your public IP address from their local networks, Narrowlink can help you publish your webserver to the internet.
 
 ## Architecture
 
