@@ -7,6 +7,12 @@ keywords: [Access Control, ACL, Proxy, Gateway, Tailscale, Narrowlink, VPN, Wire
 
 # Tailscale vs. Narrowlink
 
+:::note
+
+If this is your first visit to this website, please take a moment to review the (introduction)[/docs/intro] section to gain a basic understanding of Narrowlink. Then, reading this page will be more beneficial.
+:::
+
+
 Narrowlink and Tailscale are two open-source solutions with different architectures that enable secure remote access and connectivity across networks. They share some similarities but also have key differences in their architectures, features, and use cases.
 
 ## Overview
