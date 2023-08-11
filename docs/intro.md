@@ -65,10 +65,6 @@ Narrowlink is currently a self-hosted solution, which means you need a server to
 
 ### Next Steps
 
-:::warning Warning
-Narrowlink infrastructures must not be used for any illegal activities. We are committed to implementing transparency features to prevent any misuse or engagement in unlawful practices as much as possible.
-:::
-
 If you're interested in using Narrowlink follow our [basic tutorial](/docs/category/basic-tutorial) to learn how to set up a basic Narrowlink network. Then, you can proceed with our [extended tutorial](/docs/category/extended-tutorial) to explore advanced scenarios and use Narrowlink to its full potential.
 
 **Footnotes:**
@@ -79,7 +75,7 @@ If you're interested in using Narrowlink follow our [basic tutorial](/docs/categ
 
 [^3]: The number of users supported is limited by the hardware resources of the gateway and the number of concurrent connections.
 
-[^4]: If you cannot afford to buy a server, are unable to manage one, or want to try Narrowlink without the technical overhead, we offer a limited number of free accounts hosted on our servers. Feel free to inquire about this offer by sending an email to tr<!-- mail@address -->y@nar<!-- @host -->rowlink.com. However, please note that we cannot guarantee providing an account for everyone due to capacity limitations.
+[^4]: If you cannot afford to buy a server, are unable to manage one, or want to try Narrowlink without the technical overhead, we offer a limited number of free accounts hosted on our servers. Feel free to inquire about this offer by sending an email to tr<!-- mail@address -->y@nar<!-- @host -->rowlink.com. However, please note that we cannot guarantee providing an account for everyone due to capacity limitations. Please refer to our [Terms of Service](https://github.com/narrowlink/homepage/blob/main/ToS.md) for more information regarding the terms and conditions when using our servers.
 
 [Client]: /docs/client
 [Agent]: /docs/agent
