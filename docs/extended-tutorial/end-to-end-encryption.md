@@ -33,6 +33,14 @@ narrowlink proxy -k your_key ...
 narrowlink connect -k your_key ...
 ```
 
-:::danger
-The use of end-to-end encryption in Narrowlink is optional. Only packets marked as encrypted will undergo encryption. Unencrypted packets can still be processed by the agent if they are not marked as encrypted (without adding `-k` or `--key`).
-:::
+## End-to-End Encryption Policy Enforcement
+
+Narrowlink enables you to enforce an end-to-end encryption policy on the agent side. There are two ways to implement this policy:
+
+- Lax: The agent will accept both encrypted and unencrypted connections. (Default)
+- Strict: The agent will only accept encrypted connections.
+
+To enforce the policy, add the following line to the agent configuration file:
+```yaml
+key_policy: Strict # Strict or Lax
+```
