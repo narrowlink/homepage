@@ -6,7 +6,7 @@ keywords: [VPN, Integration, Gateway, Agent, Client, Narrowlink, Narrow, Link, N
 
 # VPN Integration
 
-You can integrate NarrowLink with [sing-box](https://github.com/SagerNet/sing-box) to access to the shared network globally on your machine. Altough it is not considered as actual VPN, however it is a good solution for accessing to the shared network globally.
+You can integrate NarrowLink with [sing-box](https://github.com/SagerNet/sing-box) to access to the shared network globally on your machine. Although it is not considered as actual VPN, however it is a good solution for accessing to the shared network globally.
 
 To integrate NarrowLink with sing-box, you need to install sing-box on your machine and then configure it to use NarrowLink as its network provider. Then you need to run the NarrowLink client on your machine as a local SOCKS proxy server.
 

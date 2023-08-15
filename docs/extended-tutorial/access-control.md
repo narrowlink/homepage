@@ -21,7 +21,7 @@ To utilize access control, you need to configure policies for your clients. In t
       policies: # list of policies
         - !Any # any type of protocols
           - null # agent name, null means any agent
-          - true # allow or dency this agent
+          - true # allow or deny this agent
 ```
 
 You can set the value of `permit` to false if you want to use blacklisting mode. Setting it to true represents whitelisting.
