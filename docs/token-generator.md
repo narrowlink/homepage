@@ -36,10 +36,10 @@ These configuration files are structured in YAML format. Comprehensive examples 
           - TCP # protocol
         - !Any # any type of protocols
           - agent_name_3 # agent name, null means any agent
-          - true # allow or dency this agent
+          - true # allow or deny this agent
         - !Any # any type of protocols
           - agent_name_4 # agent name, null means any agent
-          - true # allow or dency this agent
+          - true # allow or deny this agent
 ```
 
 ## Agent Token
@@ -87,7 +87,7 @@ tokens: # list of tokens
       policies: # list of policies
         - !Any # any type of protocols
           - null # agent name, null means any agent
-          - true # allow or dency this agent
+          - true # allow or deny this agent
 
   - !Client # client token
     uid: 00000000-0000-0000-0000-000000000000 # client uid, please use a unique uid for each user
@@ -108,10 +108,10 @@ tokens: # list of tokens
           - TCP # protocol
         - !Any # any type of protocols
           - agent_name_3 # agent name, null means any agent
-          - true # allow or dency this agent
+          - true # allow or deny this agent
         - !Any # any type of protocols
           - agent_name_4 # agent name, null means any agent
-          - true # allow or dency this agent
+          - true # allow or deny this agent
 
   - !Agent # agent token
     uid: 00000000-0000-0000-0000-000000000000 # agent uid, please use a unique uid for each user

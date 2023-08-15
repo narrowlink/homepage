@@ -30,7 +30,7 @@ tokens: # list of tokens
       policies: # list of policies
         - !Any # any type of protocols
           - null # agent name, null means any agent
-          - true # allow or dency this agent
+          - true # allow or deny this agent
 ```
 This token defines that it belongs to the user space with `00000000-0000-0000-0000-000000000001` user id (uid) and client_name_1 as the client name. The token will expire on `1704067200` (Monday, January 1, 2024 0:00:00 GMT). The access control policy allows the client to access all agents[^1]. You can change these values to your desired values. The user space is used to isolate agents and clients; therefore, each user must have a unique uid. Also, each client must have a unique name.
 

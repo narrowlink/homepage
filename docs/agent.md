@@ -1,6 +1,6 @@
 ---
 sidebar_position: 7
-description: How does narrowlink agent work?
+description: How does Narrowlink agent work?
 keywords: [Agent, Gateway, Client, Narrowlink, Narrow, Link, Networking, Internet, Security, Privacy, Open Source, Self-hosted, Tutorial, How-to, Guide, Nat, Firewall, Proxy, Reverse Proxy, Tunnel]
 ---
 

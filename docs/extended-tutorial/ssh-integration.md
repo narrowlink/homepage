@@ -6,9 +6,9 @@ keywords: [SSH, Integration, Gateway, Agent, Client, Narrowlink, Narrow, Link, N
 
 # SSH Integration
 
-The Narrowlink client can acts like `netcat` command to connect to the services that are running on the agent network machine. It is useful for various porpurses such as connecting to a ssh server.
+The Narrowlink client can acts like `netcat` command to connect to the services that are running on the agent network machine. It is useful for various purposes such as connecting to a ssh server.
 
-Add the bellow setting to your ssh client configuration which is normally at `~/.ssh/config` to use narrowlink to conenct to your machines:
+Add the setting below to your ssh client configuration, which typically resides at `~/.ssh/config`, to use Narrowlink to connect to your machines:
 
 ```bash
 Host <agent_name>
