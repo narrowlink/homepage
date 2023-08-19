@@ -8,7 +8,7 @@ keywords: [End-to-end Encryption, Security, Privacy, Gateway, Agent, Client, Nar
 
 Narrowlink relies on selected transport protocols for data encryption by default. If you use the `Wss` protocol (WebSocket <ins>with</ins> TLS), your data will be encrypted, which is enabled by default. However, if you use `Ws` (WebSocket <ins>without</ins> TLS), your data will be sent in plain text. Additionally, these protocols serve as transport methods, so if you choose a secure transport protocol, your communication is only encrypted between the client and the gateway, as well as between the agent and the gateway. As a result, the gateway retains the capability to access your packets. To add an extra layer of security to your data, you can utilize end-to-end encryption.
 
-Narrowlink employs the `Xchacha20-Poly1305` algorithm for end-to-end encryption, along with `SHA-3` based `HMAC-SHA256` for signing tunnel destinations. Both encryption and signing processes take place on both the client and agent sides, requiring manual key transfer.
+Narrowlink employs the `Xchacha20-Poly1305` algorithm for end-to-end encryption, and passphrase-based key derivation based on `SHA3-256`. It also uses `HMAC-SHA256` for signing tunnel destinations. Both the encryption and signing processes take place on both the client and agent sides, necessitating manual key transfer.
 
 ## Enabling End-to-End Encryption
 
