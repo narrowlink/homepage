@@ -12,7 +12,7 @@ Add the setting below to your ssh client configuration, which typically resides 
 
 ```bash
 Host <agent_name>
-    ProxyCommand narrowlink connect -n <agent_name> %h:%p
+    ProxyCommand narrowlink connect -n %n %h:%p
     HostName 127.0.0.1
     Port 22
     User <username> # server username
