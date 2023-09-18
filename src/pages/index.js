@@ -37,7 +37,8 @@ export default function Home() {
   return (
     <Layout
       // title={`${siteConfig.title}`}
-      title={`A secure and borderless network Swiss Army Knife`}
+      // title={`A secure and borderless network Swiss Army Knife`}
+      title={`A self-hosted solution to enable secure connectivity between devices across restricted networks like NAT or firewalls`}
       description="Narrowlink is a networking platform that allows you to publish and access your devices and services behind NAT and firewall without public IP address.">
       <HomepageHeader />
       <main>
