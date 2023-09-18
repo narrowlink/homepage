@@ -7,7 +7,8 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'Narrowlink',
-  tagline: 'A secure and borderless network Swiss Army Knife',
+  // tagline: 'A secure and borderless network Swiss Army Knife',
+  tagline: 'Unleash Secure Connectivity, Any Network',
   favicon: 'img/favicon.ico',
   trailingSlash: false,
   // Set the production url of your site here
