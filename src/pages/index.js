@@ -6,6 +6,8 @@ import Layout from '@theme/Layout';
 import HomepageFeatures from '@site/src/components/HomepageFeatures';
 import Logo from '@site/static/img/NarrowLink-fff.svg';
 import styles from './index.module.css';
+import Heading from '@theme/Heading';
+import Translate, { translate } from '@docusaurus/Translate';
 
 function HomepageHeader() {
   const { siteConfig } = useDocusaurusContext();
@@ -17,7 +19,7 @@ function HomepageHeader() {
           <Logo className="logo" />
         </div>
         <p className="hero__subtitle">{siteConfig.tagline}</p>
-        <p className="">Narrowlink securely connects devices and services together, even in restricted networks</p>
+        <p className="">A self-hosted solution to enable secure connectivity between devices across restricted networks like NAT or firewalls</p>
         <div className={styles.buttons}>
           <Link
             className="button button--secondary button--lg"
@@ -39,6 +41,14 @@ export default function Home() {
       description="Narrowlink is a networking platform that allows you to publish and access your devices and services behind NAT and firewall without public IP address.">
       <HomepageHeader />
       <main>
+        <section style={{marginTop: 20}}>
+          <div className="container text--center">
+            <Heading as="h2">
+            <a class="navbar__link" href='/docs/intro#architecture'><Translate>Architecture</Translate></a>
+            </Heading>
+            <img loading="lazy" alt="Narrowlink System Architecture" src="/img/Diagram.svg"/>
+          </div>
+        </section>
         <HomepageFeatures />
       </main>
     </Layout>

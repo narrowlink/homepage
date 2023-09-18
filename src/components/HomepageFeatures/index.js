@@ -1,7 +1,7 @@
 import React from 'react';
 import clsx from 'clsx';
 import styles from './styles.module.css';
-import Link from '@docusaurus/Link';
+// import Link from '@docusaurus/Link';
 import Translate, { translate } from '@docusaurus/Translate';
 import Heading from '@theme/Heading';
 const FeatureList = [
@@ -40,6 +40,14 @@ const FeatureList = [
       </>
     ),
   }, {
+    title: 'Peer-to-Peer Communication',
+    // Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
+    description: (
+      <>
+        Establish direct, peer-to-peer connections between clients and agents (when possible) using the QUIC protocol to increase performance by avoiding traffic routing through the gateway.
+      </>
+    ),
+  }, {
     title: 'Hidden Communications',
     // Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
     description: (
@@ -63,15 +71,17 @@ const FeatureList = [
         Providing a user management system to manage multiple users and their access to devices and services.
       </>
     ),
-  }, {
-    title: 'Flexibility',
-    // Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
-    description: (
-      <>
-        It can be combined with other tools to provide additional features, such as using it with SSH to connect to devices behind NAT and firewalls without any modifications.
-      </>
-    ),
-  }, {
+  },
+  //  {
+  //   title: 'Flexibility',
+  //   // Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
+  //   description: (
+  //     <>
+  //       It can be combined with other tools to provide additional features, such as using it with SSH to connect to devices behind NAT and firewalls without any modifications.
+  //     </>
+  //   ),
+  // },
+   {
     title: 'CDN Compatibility',
     // Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
     description: (
@@ -101,7 +111,7 @@ export default function HomepageFeatures() {
     < section className={styles.features} >
       <div className="container text--center">
         <Heading as="h2">
-          <Translate>Main features</Translate>
+          <a class="navbar__link" href='/docs/intro#key-features'><Translate>Main features</Translate></a>
         </Heading>
         <div className="container">
           <div className="row">
