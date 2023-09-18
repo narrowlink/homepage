@@ -48,19 +48,19 @@ const FeatureList = [
       </>
     ),
   }, {
-    title: 'Hidden Communications',
-    // Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
-    description: (
-      <>
-        Narrowlink uses the HTTP/S protocol alongside WebSocket to communicate with the devices, allowing for hiding the traffic in plain sight to keep connections undetected.
-      </>
-    ),
-  }, {
     title: 'End-to-End Encryption',
     // Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
     description: (
       <>
         It supports end-to-end encryption using the Xchacha20-Poly1305 cipher and signatures using HMAC-SHA256 to keep the communication secure and tamper-proof, even if the gateway is compromised.
+      </>
+    ),
+  }, {
+    title: 'Hidden Communications',
+    // Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
+    description: (
+      <>
+        Narrowlink uses the HTTP/S protocol alongside WebSocket to communicate with the devices, allowing for hiding the traffic in plain sight to keep connections undetected.
       </>
     ),
   }, {
