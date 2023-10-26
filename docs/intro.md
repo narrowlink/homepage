@@ -46,6 +46,8 @@ Narrowlink prioritizes security and aims to provide a versatile, secure access s
 
 - **End-to-End Encryption** - While using TLS enhances communication privacy, the gateway can still observe the content of communications. To address this, you can implement end-to-end encryption on top of your transport protocol, securing your communications with your own keys. This feature is particularly useful when you don't fully trust the gateway or wish to enhance communication privacy. Narrowlink utilizes the Xchacha20-Poly1305 cipher for encryption, along with HMAC-SHA256 for tamper-proofing.
 
+- **Peer-to-Peer Connectivity** Establish direct, peer-to-peer connections between clients and agents (when possible) using the QUIC protocol to increase performance by avoiding traffic routing through the gateway (Available in the nightly version).
+
 - **User Management** - Narrowlink offers a user management system that allows you to create different user spaces. Each user's space enables clients to access the user's agents, with each client having its access control policies. As a result, you can provide services to an unlimited number of users using a single gateway[^3].
 
 - **Automatic Certificate Provisioning** - Narrowlink leverages the ACME protocol to automatically generate and manage TLS certificates for published services. This feature enables you to issue or renew certificates before expiration using a Certificate Authority (CA) like [Let's Encrypt](https://letsencrypt.org/).
