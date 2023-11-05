@@ -1,7 +1,7 @@
 ---
 sidebar_position: 1
 description: What is Narrowlink? Narrowlink use cases? How does Narrowlink work? Narrowlink key features? Narrowlink requirements?
-keywords: [Narrowlink, Narrow, Link, Networking, Internet, Security, Privacy, Open Source, Self-hosted, Tutorial, How-to, Guide, Nat, Firewall, Proxy, Reverse Proxy, Tunnel]
+keywords: [Narrowlink, Narrow, Link, Networking, Internet, Security, Privacy, Open Source, Self-hosted, Tutorial, How-to, Guide, Nat, Firewall, Proxy, Reverse Proxy, Tunnel, peer-to-peer, QUIC]
 ---
 
 # Intro
