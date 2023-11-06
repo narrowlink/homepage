@@ -56,5 +56,11 @@ For example, to setup a tun interface as use it as default gateway to forward th
 
 You can use the `-m` argument to map the IP addresses of your local network to the IP addresses of the agent's network. This feature is useful for various scenarios, including when the agent can only use a specific DNS resolver, and you want to redirect the DNS traffic to the agent's network without changing the DNS resolver of your local machine.
 
+:::tip 
+The Linux users can set a special capability for the Narrowlink client after installation to avoid switching to root access. To do this, execute the following command:
+```bash
+sudo setcap cap_net_admin=+pe $(which narrowlink)
+```
+:::
 
 Congratulations! You have successfully set up a TUN interface to share internet access through the office agent.
