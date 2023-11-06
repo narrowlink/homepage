@@ -13,7 +13,7 @@ Narrowlink is a secure, open-source, and versatile platform for enabling secure 
 
 ## Example of Narrowlink Use Cases and Scenarios
 
-- **[Sharing Network Access](/docs/extended-tutorial/share-network-access)** - If you need to work from home and access your company's internal network, which only allows access from within the network, you can install the Narrowlink agent on a computer located within your company's premises. This will enable you to utilize its internet access[^1] without depending on the company's remote access tools.
+- **[Sharing Network Access](/docs/extended-tutorial/share-network-access-socks5)** - If you need to work from home and access your company's internal network, which only allows access from within the network, you can install the Narrowlink agent on a computer located within your company's premises. This will enable you to utilize its internet access[^1] without depending on the company's remote access tools.
 
 - **[Access to devices that does not support VPN](/docs/category/extended-tutorial/)** - Suppose you have a device that does not support VPN, such as an IoT sensor, CCTV camera, smart TV, and you want to access them from your laptop on a different network that cannot directly reach the device. In this case, you can install the Narrowlink agent on a device within the same network as these devices. Then, you can connect using your laptop through Narrowlink from anywhere.
 
