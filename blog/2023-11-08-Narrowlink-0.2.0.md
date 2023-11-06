@@ -24,6 +24,10 @@ Today, I am excited to announce the release of Narrowlink 0.2.0, a significant s
 
 <!--truncate-->
 
+:::info New to Narrowlink?
+If you're new to Narrowlink, start by checking out the [intro](/docs/intro) section, and then return here for the latest updates.
+:::
+
 ### What's New in Narrowlink 0.2.0
 
 Narrowlink has undergone significant improvements in this version, albeit at the cost of compatibility with version 0.1.x.
