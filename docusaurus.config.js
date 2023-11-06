@@ -74,7 +74,7 @@ const config = {
       announcementBar: {
         id: 'support_us',
         content:
-          'We are upgrading the website content for narrowlink 0.2.0. The current configurations (0.1.x) are not compatible with the new version.',
+          'We are upgrading the content for narrowlink 0.2.0. The current configurations (0.1.x) are not compatible with the new version.',
         backgroundColor: '#3b6588',
         textColor: '#ffffff',
         isCloseable: false,
