@@ -1,5 +1,5 @@
 ---
-sidebar_position: 9
+sidebar_position: 10
 description: How to set up load balancing using Narrowlink
 keywords: [Load Balancing, Webserver, Gateway, Agent, Client, Narrowlink, Narrow, Link, Networking, Internet, Security, Privacy, Open Source, Self-hosted, Tutorial, How-to, Guide, Nat, Firewall, Proxy, Reverse Proxy, Tunnel]
 ---

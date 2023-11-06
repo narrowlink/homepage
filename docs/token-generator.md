@@ -14,32 +14,41 @@ The UID is a unique identifier for each user space. It is employed to distinguis
 
 These configuration files are structured in YAML format. Comprehensive examples of configuration files for each specific component are available in the following:
 
-## Client Token
+## Client Token without ACL
+
+```yaml
+  - !Client # client token
+    uid: 00000000-0000-0000-0000-000000000000 # client uid, please use a unique uid for each user
+    name: client_name_1 # client name, please use a unique name for each client
+    exp: 1710227806 # expiration time in seconds since epoch
+```
+## Client Token with ACL
 
 ```yaml
   - !Client # client token
     uid: 00000000-0000-0000-0000-000000000000 # client uid, please use a unique uid for each user
     name: client_name_2 # client name, please use a unique name for each client
     exp: 1710227806 # expiration time in seconds since epoch
-    policies: # policies for this client
-      permit: true # whitelist mode
+    policies: [1025] # list of policy ids, it must be the same as the policy id in the client policy token and between 1025 and 65535, all the policies must be satisfied
+
+  - !ClientPolicy # client policy token
+    uid: 00000000-0000-0000-0000-000000000000 # client uid, please use a unique uid for each user
+    name: client_name_1 # client name, please use a unique name for each client
+    exp: 1710227806 # expiration time in seconds since epoch
+    pid: 1025 # policy id, it must be the same as the policy id in the client token and between 1025 and 65535
+    policy: # policies for this client
+      type: !WhiteList # !WhiteList or !BlackList
       policies: # list of policies
         - !Ip # policy based on the destination ip address
-          - null # agent name, null means any agent
+          - !Any # !Any means any agent, !Agent agent_name means the agent with the name agent_name
           - 192.168.0.1/24 # destination ip address
           - 22 # destination port
           - TCP # protocol
         - !Domain # policy based on the destination domain name
-          - agent_name_1 # agent name, null means any agent
+          - !Agent agent_name # !Any means any agent, !Agent agent_name means the agent with the name agent_name
           - narrow.host # destination domain name
           - 443 # destination port
           - TCP # protocol
-        - !Any # any type of protocols
-          - agent_name_3 # agent name, null means any agent
-          - true # allow or deny this agent
-        - !Any # any type of protocols
-          - agent_name_4 # agent name, null means any agent
-          - true # allow or deny this agent
 ```
 
 ## Agent Token
@@ -59,59 +68,54 @@ These configuration files are structured in YAML format. Comprehensive examples 
     name: agent_name_3 # agent name, it must be the same name as the agent name in the agent token
     exp: 1710227806 # expiration time in seconds since epoch
     publish_hosts: # list of the services that this agent will publish
-    - host: narrow.host # domain name
-      port: 0 # gateway's service port, 0 means any port
-      connect: # the address that the agent will connect to publish the service
-        host: 127.0.0.1 # ip address or domain name
-        port: 80 # port
-        protocol: HTTP # protocol
-    - host: tls.narrow.host # domain name
-      port: 0 # gateway's service port, 0 means any port
-      connect: # the address that the agent will connect to publish the service
-        host: 127.0.0.1 # ip address or domain name
-        port: 443 # port
-        protocol: TCP # protocol, TCP means it acts as a SNI proxy
+      - host: narrow.host # domain name
+        port: 0 # gateway's service port, 0 means any port
+        connect: # the address that the agent will connect to publish the service
+          host: 127.0.0.1 # ip address or domain name
+          port: 80 # port
+          protocol: HTTP # protocol
+      - host: tls.narrow.host # domain name
+        port: 0 # gateway's service port, 0 means any port
+        connect: # the address that the agent will connect to publish the service
+          host: 127.0.0.1 # ip address or domain name
+          port: 443 # port
+          protocol: TCP # protocol, TCP means it acts as a SNI proxy
 ```
 
 ## A complete example
 
 ```yaml
-secret: [2,0,2,3] # The secret for signing tokens, It must be the same as the gateway token secret, it is as byte array
+secret: [2, 0, 2, 3] # The secret for signing tokens, It must be the same as the gateway token secret, it is as byte array
 tokens: # list of tokens
   - !Client # client token
     uid: 00000000-0000-0000-0000-000000000000 # client uid, please use a unique uid for each user
     name: client_name_1 # client name, please use a unique name for each client
     exp: 1710227806 # expiration time in seconds since epoch
-    policies: # policies for this client
-      permit: true # whitelist mode
-      policies: # list of policies
-        - !Any # any type of protocols
-          - null # agent name, null means any agent
-          - true # allow or deny this agent
 
   - !Client # client token
     uid: 00000000-0000-0000-0000-000000000000 # client uid, please use a unique uid for each user
     name: client_name_2 # client name, please use a unique name for each client
     exp: 1710227806 # expiration time in seconds since epoch
-    policies: # policies for this client
-      permit: true # whitelist mode
+    policies: [1025] # list of policy ids, it must be the same as the policy id in the client policy token and between 1025 and 65535, all the policies must be satisfied
+
+  - !ClientPolicy # client policy token
+    uid: 00000000-0000-0000-0000-000000000000 # client uid, please use a unique uid for each user
+    name: client_name_1 # client name, please use a unique name for each client
+    exp: 1710227806 # expiration time in seconds since epoch
+    pid: 1025 # policy id, it must be the same as the policy id in the client token and between 1025 and 65535
+    policy: # policies for this client
+      type: !WhiteList # !WhiteList or !BlackList
       policies: # list of policies
         - !Ip # policy based on the destination ip address
-          - null # agent name, null means any agent
+          - !Any # !Any means any agent, !Agent agent_name means the agent with the name agent_name
           - 192.168.0.1/24 # destination ip address
           - 22 # destination port
           - TCP # protocol
         - !Domain # policy based on the destination domain name
-          - agent_name_1 # agent name, null means any agent
+          - !Agent agent_name # !Any means any agent, !Agent agent_name means the agent with the name agent_name
           - narrow.host # destination domain name
           - 443 # destination port
           - TCP # protocol
-        - !Any # any type of protocols
-          - agent_name_3 # agent name, null means any agent
-          - true # allow or deny this agent
-        - !Any # any type of protocols
-          - agent_name_4 # agent name, null means any agent
-          - true # allow or deny this agent
 
   - !Agent # agent token
     uid: 00000000-0000-0000-0000-000000000000 # agent uid, please use a unique uid for each user
@@ -123,18 +127,18 @@ tokens: # list of tokens
     name: agent_name_3 # agent name, it must be the same name as the agent name in the agent token
     exp: 1710227806 # expiration time in seconds since epoch
     publish_hosts: # list of the services that this agent will publish
-    - host: narrow.host # domain name
-      port: 0 # gateway's service port, 0 means any port
-      connect: # the address that the agent will connect to publish the service
-        host: 127.0.0.1 # ip address or domain name
-        port: 80 # port
-        protocol: HTTP # protocol
-    - host: tls.narrow.host # domain name
-      port: 0 # gateway's service port, 0 means any port
-      connect: # the address that the agent will connect to publish the service
-        host: 127.0.0.1 # ip address or domain name
-        port: 443 # port
-        protocol: TCP # protocol, TCP means it acts as a SNI proxy
+      - host: narrow.host # domain name
+        port: 0 # gateway's service port, 0 means any port
+        connect: # the address that the agent will connect to publish the service
+          host: 127.0.0.1 # ip address or domain name
+          port: 80 # port
+          protocol: HTTP # protocol
+      - host: tls.narrow.host # domain name
+        port: 0 # gateway's service port, 0 means any port
+        connect: # the address that the agent will connect to publish the service
+          host: 127.0.0.1 # ip address or domain name
+          port: 443 # port
+          protocol: TCP # protocol, TCP means it acts as a SNI proxy
 ```
 
 

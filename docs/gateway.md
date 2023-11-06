@@ -30,7 +30,7 @@ services: # list of services
   tls_config: !Acme # TLS configuration
     email: "email@domain.example" # email address to register with Let's Encrypt
     challenge_type: Http01 # Http01 or TlsAlpn01 (default: Http01)
-    directory_url: https://acme-staging-v02.api.letsencrypt.org/directory # Let's Encrypt directory URL (default: https://acme-v02.api.letsencrypt.org/directory)
+    directory_url: https://acme-v02.api.letsencrypt.org/directory # Let's Encrypt directory URL (default: https://acme-v02.api.letsencrypt.org/directory)
   # tls_config: !File /etc/cert/domain.example/fullchain+privkey.pem
 - !Ws # insecure websocket service
   domains: ["domain.example"] # list of domains that this service should listen to

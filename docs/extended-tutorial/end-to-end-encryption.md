@@ -1,12 +1,12 @@
 ---
-sidebar_position: 6
+sidebar_position: 7
 description: How to secure your connections using end-to-end encryption
 keywords: [End-to-end Encryption, Security, Privacy, Gateway, Agent, Client, Narrowlink, Narrow, Link, Networking, Internet, Security, Privacy, Open Source, Self-hosted, Tutorial, How-to, Guide, Nat, Firewall, Proxy, Reverse Proxy, Tunnel,Nat, Firewall, Proxy, Reverse Proxy, Tunnel, Xchacha20-Poly1305, HMAC-SHA256]
 ---
 
 # End-to-End Encryption
 
-Narrowlink relies on selected transport protocols for data encryption by default. If you use the `Wss` protocol (WebSocket <ins>with</ins> TLS), your data will be encrypted, which is enabled by default. However, if you use `Ws` (WebSocket <ins>without</ins> TLS), your data will be sent in plain text. Additionally, these protocols serve as transport methods, so if you choose a secure transport protocol, your communication is only encrypted between the client and the gateway, as well as between the agent and the gateway. As a result, the gateway retains the capability to access your packets. To add an extra layer of security to your data, you can utilize end-to-end encryption.
+Narrowlink relies on selected transport protocols for data encryption by default. If you use the `Wss` protocol (WebSocket <ins>with</ins> TLS) or peer to peer mode, your data will be encrypted, which is enabled by default. However, if you use `Ws` (WebSocket <ins>without</ins> TLS), your data will be sent in plain text. Additionally, these protocols serve as transport methods, so if you choose a secure transport protocol, your communication is only encrypted between the client and the gateway, as well as between the agent and the gateway. As a result, the gateway retains the capability to access your packets. To add an extra layer of security to your data, you can utilize end-to-end encryption.
 
 Narrowlink employs the `Xchacha20-Poly1305` algorithm for end-to-end encryption, and passphrase-based key derivation based on `SHA3-256`. It also uses `HMAC-SHA256` for signing tunnel destinations. Both the encryption and signing processes take place on both the client and agent sides, necessitating manual key transfer.
 
@@ -19,8 +19,12 @@ Setting up end-to-end encryption is a straightforward process. You need to estab
 In the agent configuration file, you must insert the following line:
 
 ```yaml
-key: "your_key"
+e2ee:
+  - !PassPhrase # Enabling end to end encryption (optional)
+    phrase: "your_key" # key for end to end encryption
+    policy: Lax # Lax or Strict (default: Lax) Lax allows clients to connect without a key, while Strict requires a key
 ```
+
 Replace "your_key" with the actual key you want to use for encryption.
 
 2. Client Command Setup:
@@ -42,5 +46,5 @@ Narrowlink enables you to enforce an end-to-end encryption policy on the agent s
 
 To enforce the policy, add the following line to the agent configuration file:
 ```yaml
-key_policy: Strict # Strict or Lax
+    policy: Strict # Strict or Lax
 ```

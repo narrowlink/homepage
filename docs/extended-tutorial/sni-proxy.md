@@ -1,5 +1,5 @@
 ---
-sidebar_position: 10
+sidebar_position: 11
 description: How to publish webserver without TLS offloading
 keywords: [SNI proxy, Webserver, Gateway, Agent, Client, Narrowlink, Narrow, Link, Networking, Internet, Security, Privacy, Open Source, Self-hosted, Tutorial, How-to, Guide, Nat, Firewall, Proxy, Reverse Proxy, Tunnel]
 ---
@@ -22,23 +22,22 @@ tokens: # list of tokens
   #- !Client # client token
   # ...
   - !AgentPublish # agent publish token to publish web services
-    uid: 00000000-0000-0000-0000-000000000001 # agent uid, please use a unique uid for each user
-    name: agent_name # agent name, it must be the same name as the agent name in the agent token
-    exp: 1710227806 # expiration time in seconds since epoch (Monday, January 1, 2024 0:00:00 GMT)
-    connect: # list of the services that this agent will publish
+    uid: 00000000-0000-0000-0000-000000000000 # agent uid, please use a unique uid for each user
+    name: agent_name_3 # agent name, it must be the same name as the agent name in the agent token
+    exp: 1710227806 # expiration time in seconds since epoch
     publish_hosts: # list of the services that this agent will publish
-    - host: tls.domain.example # domain name
-      port: 443 # gateway's service port, 0 means any port
-      connect: # the address that the agent will connect to publish the service
-        host: narrow.host # ip address or domain name
-        port: 443 # port
-        protocol: TCP # protocol
-    - host: tls.domain.example # domain name
-      port: 80 # gateway's service port, 0 means any port
-      connect: # the address that the agent will connect to publish the service
-        host: narrow.host # ip address or domain name
-        port: 80 # port
-        protocol: HTTP # protocol
+      - host: tls.domain.example # domain name
+        port: 443 # gateway's service port, 0 means any port
+        connect: # the address that the agent will connect to publish the service
+          host: 127.0.0.1 # ip address or domain name
+          port: 443 # port
+          protocol: TCP # protocol, TCP means it acts as a SNI proxy
+      - host: tls.domain.example # domain name
+        port: 80 # gateway's service port, 0 means any port
+        connect: # the address that the agent will connect to publish the service
+          host: 127.0.0.1 # ip address or domain name
+          port: 80 # port
+          protocol: HTTP # protocol
 ```
 
 In the above configuration, you have two hosts with the same domain name but different ports. The first one is for TLS communication (port 443), and the second one is for HTTP communication (port 80). The gateway will forward the TLS communication to the agent without any modifications, allowing the agent to handle the TLS communication directly.

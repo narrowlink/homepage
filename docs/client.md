@@ -12,7 +12,8 @@ The Narrowlink client is responsible for the following tasks:
 
 ## Features of the Narrowlink Client
 
-- Sharing internet access of a computer behind NAT networks by setting up a local SOCKS5 proxy server.
+- Sharing internet access of a computer behind NAT networks by setting up a local SOCKS5 proxy server or TUN interface.
+- Establishing peer-to-peer connectivity between the client and agent.
 - Enabling TCP and UDP port forwarding to connect to agent-side services.
 - Implementing end-to-end encryption based on Xchacha20Poly1305 and SHA3-based HMAC-256 for signing the remote address.
 - Providing a netcat-like interface for connecting to agent network services.
@@ -26,9 +27,10 @@ The configuration comprises the following parameters as a YAML file:
 
 
 ```yaml
-gateway: gateway.domain.example:443 # address of the gateway
-token: eyJ0eX....kNHYQ_4 # token for authentication
-service_type: Wss # Wss or Ws (default: Wss)
+endpoints:
+  - !SelfHosted # Self hosted endpoint, more options coming soon
+    gateway: gateway.domain.example:443 # address of the gateway
+    token: eyJ0eX....kNHYQ_4 # token for authentication
 ```
 ## Default Configuration Paths
 

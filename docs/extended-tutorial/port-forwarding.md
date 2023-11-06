@@ -1,5 +1,5 @@
 ---
-sidebar_position: 4
+sidebar_position: 5
 description: How to set up port forwarding using Narrowlink
 keywords: [Port Forwarding, RDP, SSH, TCP, UDP, NAT, Firewall, Proxy, Reverse Proxy, Tunnel, Gateway, Agent, Client, Narrowlink, Narrow, Link, Networking, Internet, Security, Privacy, Open Source, Self-hosted, Tutorial, How-to, Guide,Nat, Firewall, Proxy, Reverse Proxy, Tunnel]
 ---
@@ -12,26 +12,26 @@ To perform port forwarding you can run ```narrowlink forward``` command. This co
 
 ```bash
 narrowlink forward --help
-Create a tunnel 
+Create a forward tunnel
+
+Usage:
+  narrowlink forward [OPTIONS] <remote_addr:remote_port>
 
 Description:
   Creates a tunnel between agent and client
 
 Examples:
   narrowlink forward -n <agent name> <remote_addr:remote_port>
-  narrowlink f -usn <agent name> <remote_addr:remote_port>
+  narrowlink f -un <agent name> <remote_addr:remote_port>
 
 Options:
-  -n, --name=       The name of the agent
-  -l, --local=      The local address and port to bind
-  -s, --silent      Do not check whether the target address and port reachable or not
+  -d, --direct      Direct connection to the remote endpoint (peer-to-peer)
+  -r, --relay       Relay connection to the remote endpoint (peer-to-gateway-to-peer)
+  -u, --udp         Use UDP instead of TCP
+  -n, --name=       The name of the agent (required)
   -k, --key=        The secret key for end-to-end encryption
-  -u, --udp=        Use UDP instead of TCP
+  -l, --local=      The local address and port to bind
 ```
-
-:::note
-Using the ```-s``` option will disable the reachability check of the target address and port. In default mode, the client will send a packet before forwarding the traffic to check the reachability of the target address and port.
-:::
 
 As an example, let's assume that you want to forward RDP traffic from a remote machine to your local machine. To do this, you need to run the following command on your local machine:
 

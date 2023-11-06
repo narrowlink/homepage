@@ -22,15 +22,9 @@ tokens: # list of tokens
   #- !Agent # agent token
   # ...
   - !Client # client token
-    uid: 00000000-0000-0000-0000-000000000001 # client uid, please use a unique uid for each user
-    name: client_name_1 # client name, please use a unique name for each client (not effective yet)
-    exp: 1704067200 # expiration time in seconds since epoch (Monday, January 1, 2024 0:00:00 GMT)
-    policies: # policies for this client
-      permit: true # whitelist mode
-      policies: # list of policies
-        - !Any # any type of protocols
-          - null # agent name, null means any agent
-          - true # allow or deny this agent
+    uid: 00000000-0000-0000-0000-000000000000 # client uid, please use a unique uid for each user
+    name: client_name_2 # client name, please use a unique name for each client
+    exp: 1710227806 # expiration time in seconds since epoch
 ```
 This token defines that it belongs to the user space with `00000000-0000-0000-0000-000000000001` user id (uid) and client_name_1 as the client name. The token will expire on `1704067200` (Monday, January 1, 2024 0:00:00 GMT). The access control policy allows the client to access all agents[^1]. You can change these values to your desired values. The user space is used to isolate agents and clients; therefore, each user must have a unique uid. Also, each client must have a unique name.
 
@@ -49,8 +43,10 @@ narrowlink-token-generator token-generator.yaml
 Next, configure the client by creating a file named `client.yaml` in the folder where you will run the client, and insert the following content:
 
 ```yaml
-gateway: gateway.domain.example:443 # Address of the gateway
-token: eyJ0eX....kNHYQ_4 # Token for authentication
+endpoints:
+  - !SelfHosted # Self hosted endpoint, more options coming soon
+    gateway: gateway.domain.example:443 # address of the gateway
+    token: eyJ0eX....kNHYQ_4 # token for authentication
 ```
 
 Replace the `token` field with the obtained token, and replace the `gateway` field with the address of the gateway.

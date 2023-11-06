@@ -8,7 +8,7 @@ keywords: [Installation, Gateway, Agent, Client, Narrowlink, Narrow, Link, Netwo
 
 Narrowlink can be installed in the following ways:
 
-- [Installing via Cargo (Recommended)](#cargo)
+<!-- - [Installing via Cargo (Recommended)](#cargo) -->
 - [Downloading the precompiled binary](#precompiled-binary)
 - [Installing from the source code](#source-code)
 
@@ -19,7 +19,7 @@ Each component of Narrowlink has an individual binary and package name with spec
 - `narrowlink-gateway` represents the [Gateway] component.
 - `narrowlink-token-generator` represents the [Token Generator] component.
 
-## Cargo
+<!-- ## Cargo
 
 Cargo is a package manager for the Rust programming language. It simplifies the process of managing Rust packages and their dependencies.
 
@@ -54,7 +54,7 @@ cargo install cargo-update
 
 ```bash
 cargo install-update narrowlink-client narrowlink-agent narrowlink-gateway narrowlink-token-generator
-```
+``` -->
 
 ## Precompiled Binary
 If you prefer to use precompiled binaries, they are available on the GitHub release page. You can download the binaries from the links below that refer to the latest release. Currently, we provide binaries for Linux, macOS, and Windows platforms for both ARM and x86 architectures. However, it's worth noting that Narrowlink is not limited to these platforms - you can build for other targets using alternative installation methods.
@@ -67,34 +67,34 @@ Windows security features may prevent you from running the downloaded binaries. 
 
 ||x64|Arm64 | x86 | Arm32  |
 |---|:-:|:-:|:-:|:-:|
-|Linux|[Download](https://github.com/narrowlink/narrowlink/releases/download/0.1.4/narrowlink-gateway-x86_64-unknown-linux-musl)|[Download](https://github.com/narrowlink/narrowlink/releases/download/0.1.4/narrowlink-gateway-aarch64-unknown-linux-musl)|[Download](https://github.com/narrowlink/narrowlink/releases/download/0.1.4/narrowlink-gateway-i686-unknown-linux-musl)|[Download](https://github.com/narrowlink/narrowlink/releases/download/0.1.4/narrowlink-gateway-arm-unknown-linux-musleabi)|
-|MacOS|[Download](https://github.com/narrowlink/narrowlink/releases/download/0.1.4/narrowlink-gateway-x86_64-apple-darwin)|[Download](https://github.com/narrowlink/narrowlink/releases/download/0.1.4/narrowlink-gateway-aarch64-apple-darwin)|N/A|N/A|
-|Windows|[Download](https://github.com/narrowlink/narrowlink/releases/download/0.1.4/narrowlink-gateway-x86_64-pc-windows-msvc.exe)|Soon|[Download](https://github.com/narrowlink/narrowlink/releases/download/0.1.4/narrowlink-gateway-i686-pc-windows-msvc.exe)|N/A|
+|Linux|[Download](https://github.com/narrowlink/narrowlink/releases/download/Nightly/narrowlink-gateway-x86_64-unknown-linux-musl)|[Download](https://github.com/narrowlink/narrowlink/releases/download/Nightly/narrowlink-gateway-aarch64-unknown-linux-musl)|[Download](https://github.com/narrowlink/narrowlink/releases/download/Nightly/narrowlink-gateway-i686-unknown-linux-musl)|[Download](https://github.com/narrowlink/narrowlink/releases/download/Nightly/narrowlink-gateway-arm-unknown-linux-musleabi)|
+|MacOS|[Download](https://github.com/narrowlink/narrowlink/releases/download/Nightly/narrowlink-gateway-x86_64-apple-darwin)|[Download](https://github.com/narrowlink/narrowlink/releases/download/Nightly/narrowlink-gateway-aarch64-apple-darwin)|N/A|N/A|
+|Windows|[Download](https://github.com/narrowlink/narrowlink/releases/download/Nightly/narrowlink-gateway-x86_64-pc-windows-msvc.exe)|Soon|[Download](https://github.com/narrowlink/narrowlink/releases/download/Nightly/narrowlink-gateway-i686-pc-windows-msvc.exe)|N/A|
 
 ### Agent
 
 ||x64|Arm64 | x86 | Arm32  |
 |---|:-:|:-:|:-:|:-:|
-|Linux|[Download](https://github.com/narrowlink/narrowlink/releases/download/0.1.4/narrowlink-agent-x86_64-unknown-linux-musl)|[Download](https://github.com/narrowlink/narrowlink/releases/download/0.1.4/narrowlink-agent-aarch64-unknown-linux-musl)|[Download](https://github.com/narrowlink/narrowlink/releases/download/0.1.4/narrowlink-agent-i686-unknown-linux-musl)|[Download](https://github.com/narrowlink/narrowlink/releases/download/0.1.4/narrowlink-agent-arm-unknown-linux-musleabi)|
-|MacOS|[Download](https://github.com/narrowlink/narrowlink/releases/download/0.1.4/narrowlink-agent-x86_64-apple-darwin)|[Download](https://github.com/narrowlink/narrowlink/releases/download/0.1.4/narrowlink-agent-aarch64-apple-darwin)|N/A|N/A|
-|Windows|[Download](https://github.com/narrowlink/narrowlink/releases/download/0.1.4/narrowlink-agent-x86_64-pc-windows-msvc.exe)|Soon|[Download](https://github.com/narrowlink/narrowlink/releases/download/0.1.4/narrowlink-agent-i686-pc-windows-msvc.exe)|N/A|
+|Linux|[Download](https://github.com/narrowlink/narrowlink/releases/download/Nightly/narrowlink-agent-x86_64-unknown-linux-musl)|[Download](https://github.com/narrowlink/narrowlink/releases/download/Nightly/narrowlink-agent-aarch64-unknown-linux-musl)|[Download](https://github.com/narrowlink/narrowlink/releases/download/Nightly/narrowlink-agent-i686-unknown-linux-musl)|[Download](https://github.com/narrowlink/narrowlink/releases/download/Nightly/narrowlink-agent-arm-unknown-linux-musleabi)|
+|MacOS|[Download](https://github.com/narrowlink/narrowlink/releases/download/Nightly/narrowlink-agent-x86_64-apple-darwin)|[Download](https://github.com/narrowlink/narrowlink/releases/download/Nightly/narrowlink-agent-aarch64-apple-darwin)|N/A|N/A|
+|Windows|[Download](https://github.com/narrowlink/narrowlink/releases/download/Nightly/narrowlink-agent-x86_64-pc-windows-msvc.exe)|Soon|[Download](https://github.com/narrowlink/narrowlink/releases/download/Nightly/narrowlink-agent-i686-pc-windows-msvc.exe)|N/A|
 
 ### Client
 
 ||x64|Arm64 | x86 | Arm32  |
 |---|:-:|:-:|:-:|:-:|
-|Linux|[Download](https://github.com/narrowlink/narrowlink/releases/download/0.1.4/narrowlink-x86_64-unknown-linux-musl)|[Download](https://github.com/narrowlink/narrowlink/releases/download/0.1.4/narrowlink-aarch64-unknown-linux-musl)|[Download](https://github.com/narrowlink/narrowlink/releases/download/0.1.4/narrowlink-i686-unknown-linux-musl)|[Download](https://github.com/narrowlink/narrowlink/releases/download/0.1.4/narrowlink-arm-unknown-linux-musleabi)|
-|MacOS|[Download](https://github.com/narrowlink/narrowlink/releases/download/0.1.4/narrowlink-x86_64-apple-darwin)|[Download](https://github.com/narrowlink/narrowlink/releases/download/0.1.4/narrowlink-aarch64-apple-darwin)|N/A|N/A|
-|Windows|[Download](https://github.com/narrowlink/narrowlink/releases/download/0.1.4/narrowlink-x86_64-pc-windows-msvc.exe)|Soon|[Download](https://github.com/narrowlink/narrowlink/releases/download/0.1.4/narrowlink-i686-pc-windows-msvc.exe)|N/A|
+|Linux|[Download](https://github.com/narrowlink/narrowlink/releases/download/Nightly/narrowlink-x86_64-unknown-linux-musl)|[Download](https://github.com/narrowlink/narrowlink/releases/download/Nightly/narrowlink-aarch64-unknown-linux-musl)|[Download](https://github.com/narrowlink/narrowlink/releases/download/Nightly/narrowlink-i686-unknown-linux-musl)|[Download](https://github.com/narrowlink/narrowlink/releases/download/Nightly/narrowlink-arm-unknown-linux-musleabi)|
+|MacOS|[Download](https://github.com/narrowlink/narrowlink/releases/download/Nightly/narrowlink-x86_64-apple-darwin)|[Download](https://github.com/narrowlink/narrowlink/releases/download/Nightly/narrowlink-aarch64-apple-darwin)|N/A|N/A|
+|Windows|[Download](https://github.com/narrowlink/narrowlink/releases/download/Nightly/narrowlink-x86_64-pc-windows-msvc.exe)|Soon|[Download](https://github.com/narrowlink/narrowlink/releases/download/Nightly/narrowlink-i686-pc-windows-msvc.exe)|N/A|
 
 
 ### Token Generator
 
 ||x64|Arm64 | x86 | Arm32  |
 |---|:-:|:-:|:-:|:-:|
-|Linux|[Download](https://github.com/narrowlink/narrowlink/releases/download/0.1.4/narrowlink-token-generator-x86_64-unknown-linux-musl)|[Download](https://github.com/narrowlink/narrowlink/releases/download/0.1.4/narrowlink-token-generator-aarch64-unknown-linux-musl)|[Download](https://github.com/narrowlink/narrowlink/releases/download/0.1.4/narrowlink-token-generator-i686-unknown-linux-musl)|[Download](https://github.com/narrowlink/narrowlink/releases/download/0.1.4/narrowlink-token-generator-arm-unknown-linux-musleabi)|
-|MacOS|[Download](https://github.com/narrowlink/narrowlink/releases/download/0.1.4/narrowlink-token-generator-x86_64-apple-darwin)|[Download](https://github.com/narrowlink/narrowlink/releases/download/0.1.4/narrowlink-token-generator-aarch64-apple-darwin)|N/A|N/A|
-|Windows|[Download](https://github.com/narrowlink/narrowlink/releases/download/0.1.4/narrowlink-token-generator-x86_64-pc-windows-msvc.exe)|Soon|[Download](https://github.com/narrowlink/narrowlink/releases/download/0.1.4/narrowlink-token-generator-i686-pc-windows-msvc.exe)|N/A|
+|Linux|[Download](https://github.com/narrowlink/narrowlink/releases/download/Nightly/narrowlink-token-generator-x86_64-unknown-linux-musl)|[Download](https://github.com/narrowlink/narrowlink/releases/download/Nightly/narrowlink-token-generator-aarch64-unknown-linux-musl)|[Download](https://github.com/narrowlink/narrowlink/releases/download/Nightly/narrowlink-token-generator-i686-unknown-linux-musl)|[Download](https://github.com/narrowlink/narrowlink/releases/download/Nightly/narrowlink-token-generator-arm-unknown-linux-musleabi)|
+|MacOS|[Download](https://github.com/narrowlink/narrowlink/releases/download/Nightly/narrowlink-token-generator-x86_64-apple-darwin)|[Download](https://github.com/narrowlink/narrowlink/releases/download/Nightly/narrowlink-token-generator-aarch64-apple-darwin)|N/A|N/A|
+|Windows|[Download](https://github.com/narrowlink/narrowlink/releases/download/Nightly/narrowlink-token-generator-x86_64-pc-windows-msvc.exe)|Soon|[Download](https://github.com/narrowlink/narrowlink/releases/download/Nightly/narrowlink-token-generator-i686-pc-windows-msvc.exe)|N/A|
 
 
 ## Source Code
