@@ -1,6 +1,6 @@
 ---
 title: Narrowlink 0.2.0 - Peer-to-Peer Connectivity and TUN Interface
-description: Narrowlink enables secure remote access across restricted networks. Learn how its architecture works and the unique benefits it unlocks.
+description: Narrowlink 0.2.0. Establishing a peer-to-peer connection to a remote SSH server behind a NAT. Using a TUN interface to share network access.
 slug: Narrowlink-0.2.0-Peer-to-Peer-Connectivity-and-TUN-Interface
 authors:
   - name: Sajjad Pourali
@@ -18,7 +18,7 @@ date: 2023-11-08T00:00
 
 It has been about three months since Narrowlink was officially released, and it has received a warm welcome from the open-source community. Following this warm reception, I have committed myself to working diligently to deliver higher-quality software that is responsive to the community's feedback and needs.
 
-<p align="center"><img src="/img/Narrowlink-0.2.0.svg" alt="Narrowlink Logo" width="90%"/></p>
+<p align="center"><img src="/blog/2023/Narrowlink-0.2.0.svg" alt="Peer to peer connection diagram using narrowlink" width="100%"/></p>
 
 Today, I am excited to announce the release of Narrowlink 0.2.0, a significant step forward in improving stability, performance, and flexibility. Your input and support have been instrumental in shaping these enhancements, and I'm eager to share the details of this latest update with you.
 
@@ -31,6 +31,8 @@ Narrowlink has undergone significant improvements in this version, albeit at the
 #### Peer-to-Peer Connectivity
 
 Previously, Narrowlink relied on a gateway for all transmissions, which introduced latency and performance issues. In this version, the previous mode, called relay mode, has been replaced with direct mode, which utilizes a P2P connectivity implementation using the QUIC protocol. Starting with this version, all tunnels and connections use the relay mode and simultaneously attempt to establish a direct channel. If the direct channel is successfully established, it stops using the relay mode, offering more efficient and direct connections. Users can freely choose whether they want a direct-only connection or a relay-only connection for the gateway. Unlike other solutions, Narrowlink doesn't rely on STUN protocol or packet broadcasting within the network to establish direct channels. Instead, the gateway determines the NAT configuration to issue proper UDP punch-holding instructions. This version uses the QUIC protocol for communications to maintain Narrowlink's proxy nature and to make the communications appear as normal web traffic.
+
+<p align="center"><img src="/blog/2023/Narrowlink-p2p-ssh.png" alt="Peer to peer SSH using narrowlink" width="100%"/><em >Establishing a peer-to-peer connection to a remote SSH server behind a NAT. <a href="/docs/extended-tutorial/peer-to-peer" target="_blank">Learn more</a>.</em></p>
 
 #### Why Proxy and Not VPN?
 
