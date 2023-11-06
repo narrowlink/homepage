@@ -38,9 +38,9 @@ Previously, Narrowlink relied on a gateway for all transmissions, which introduc
 
 Security takes top priority in Narrowlink. While VPNs and proxies share the goal of enhancing online privacy and security, proxies offer distinct advantages that make them a more secure choice for many users. Unlike VPNs, which require elevated privileges to function effectively, proxies operate exclusively at the application layer, eliminating the need for superuser access that could potentially compromise system security. Furthermore, proxies only transmit application layer data and facilitate one-way connections initiated by the user, while VPNs transfer the entire network stack and enable bidirectional communication, leaving both parties exposed to potential attacks. Given Narrowlink's strong emphasis on security, the proxy approach is preferred for providing superior security.
 
-#### TUN Interface
+#### TUN Interface [^1]
 
-Proxies require an interface to receive network traffic from users. While proxies typically use HTTP or SOCKS protocols for collecting application network traffic, these protocols may not adapt well with all applications. To address this, Narrowlink initially used a local SOCKS server to receive user communications. However, due to adaptation issues, Narrowlink has added support for a special VPN interface using a TUN feature in this release. The TUN interface receives network traffic from the IP protocol, including its headers. Since Narrowlink functions as a proxy and only transmits application-layer packets, a user-space TCP/IP network stack has been implemented to manage such communications. This allows the extraction of application layer traffic. Please note that this feature is still experimental and requires superuser access on the Narrowlink client side.
+Proxies require an interface to receive network traffic from users. While proxies typically use HTTP or SOCKS protocols for collecting application network traffic, these protocols may not adapt well with all applications. To address this, Narrowlink initially used a local SOCKS server to receive user communications. However, due to adaptation issues, Narrowlink has added support for a special VPN interface using a TUN feature in this release. The TUN interface requires privileged access and receives network traffic from the IP protocol, including its headers. Since Narrowlink functions as a proxy and only transmits application-layer packets, a user-space TCP/IP network stack has been implemented to manage such communications, which allows the extraction of application layer traffic.
 
 #### Fine-Grained Certificate Provisioning
 
@@ -63,10 +63,13 @@ Narrowlink has other minor improvements, as follows:
 
 ### What's Next for Narrowlink
 
-Narrowlink is not yet ready for industrial use but is suitable for personal use. Future plans for Narrowlink include focusing on stabilization, improving the user interface, and integrating cloud-based solutions.
+Narrowlink is currently optimized for personal use and is committed to further enhancing its capabilities to support a broader range of applications, including industrial use. Our future plans for Narrowlink include a focus on stabilization, improving the user interface, and integrating cloud-based solutions.
 
 ### A Big Thank You to the Community
 
 I am genuinely thankful to the people who have shown trust in and warmly welcomed Narrowlink, especially members from <ins>Hackernews</ins> and <ins>Reddit</ins>, whose support has fueled my passion to continually enhance and extend Narrowlink.
 
 Stay tuned for the next update, and please keep the feedback coming. Your involvement is what makes Narrowlink better with each release.
+
+
+[^1]: The TUN interface feature is experimental and appreciate early adopters who are willing to explore its potential and will continue to provide clear guidelines for safe usage.
