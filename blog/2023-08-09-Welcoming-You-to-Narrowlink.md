@@ -5,7 +5,7 @@ slug: Hello-World
 authors:
   - name: Sajjad Pourali
     title: Creator of Narrowlink
-    url: https://github.com/SajjadPourali
+    url: https://pourali.com
     image_url: https://github.com/SajjadPourali.png
 tags: [narrowlink, remote-access, networking, self-hosted, reverse-proxy, tunnel, publish-webserver, share-network-access, port-forwarding, end-to-end-encryption]
 image: /img/NarrowLink-888.svg

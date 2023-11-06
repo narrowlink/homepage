@@ -98,7 +98,7 @@ When evaluating Narrowlink vs Tailscale, there are some key differences to consi
 
 - Tailscale focuses on connections between devices, while Narrowlink focuses on accessing services through agent proxies.
 - Tailscale uses a SaaS model relying on its cloud coordination service, while Narrowlink is self-hosted for more customization and control.
-- Tailscale uses WireGuard for better raw throughput computational resources between devices, while Narrowlink requires more computational resources but still has adequate performance for most use cases.
+- Tailscale uses WireGuard for better raw throughput computational resources between devices, while Narrowlink requires more computational resources but still has adequate performance and insensible for most use cases.
 - Narrowlink supports advanced ACLs, access to external networks, and custom proxy behaviors, while Tailscale has basic IP-based ACLs.
 - Narrowlink can be deployed behind CDNs, while Tailscale does not integrate with CDNs.
 - Narrowlink offers more flexibility in publishing and exposing services, while Tailscale is more limited.
