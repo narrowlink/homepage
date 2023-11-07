@@ -73,7 +73,10 @@ Narrowlink is currently optimized for personal use and is committed to further e
 
 I am genuinely thankful to the people who have shown trust in and warmly welcomed Narrowlink, especially members from <ins>Hackernews</ins> and <ins>Reddit</ins>, whose support has fueled my passion to continually enhance and extend Narrowlink.
 
-Stay tuned for the next update, and please keep the feedback coming. Your involvement is what makes Narrowlink better with each release.
+#### Call for contributors
 
+Narrowlink is an open-source project and wholeheartedly welcomes contributions from the community in any form, be it code, documentation, sponsorship, or feedback. Narrowlink is particularly interested in contributions related to the web frontend interface using Svelte and Tailwind to develop management interfaces and GUI clients with Tauri.
+
+Stay tuned for the next update, and please keep the feedback coming. Your involvement is what makes Narrowlink better with each release.
 
 [^1]: The TUN interface feature is experimental and appreciate early adopters who are willing to explore its potential and will continue to provide clear guidelines for safe usage.
