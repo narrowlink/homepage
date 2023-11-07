@@ -30,7 +30,7 @@ If you're new to Narrowlink, start by checking out the [intro](/docs/intro) sect
 
 ### What's New in Narrowlink 0.2.0
 
-Narrowlink has undergone significant improvements in this version, albeit at the cost of compatibility with version 0.1.x.
+Narrowlink has undergone significant improvements in this version; however, this comes at the cost of compatibility with version 0.1.x.
 
 #### Peer-to-Peer Connectivity
 
@@ -63,11 +63,11 @@ Narrowlink has other minor improvements, as follows:
 -   Improved logging mechanism.
 -   Enhanced stability.
 -   Improved error handling.
--   Added nightly support to default error messages.
+
 
 ### What's Next for Narrowlink
 
-Narrowlink is currently optimized for personal use and is committed to further enhancing its capabilities to support a broader range of applications, including industrial use. Our future plans for Narrowlink include a focus on stabilization, improving the user interface, and integrating cloud-based solutions.
+Narrowlink is currently optimized for personal use and is committed to further enhancing its capabilities to support a broader range of applications, including enterprise usage. Our future plans for Narrowlink include a focus on stabilization, improving the user interface, and integrating cloud-based solutions
 
 ### A Big Thank You to the Community
 
