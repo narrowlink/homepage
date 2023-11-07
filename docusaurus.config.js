@@ -123,6 +123,10 @@ const config = {
               //   href: 'https://stackoverflow.com/questions/tagged/narrowlink',
               // },
               {
+                label: 'Reddit',
+                href: 'https://www.reddit.com/r/narrowlink/',
+              },
+              {
                 label: 'Twitter',
                 href: 'https://twitter.com/NarrowlinkCom',
               },
