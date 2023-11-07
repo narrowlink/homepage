@@ -31,6 +31,7 @@ endpoints:
   - !SelfHosted # Self hosted endpoint, more options coming soon
     gateway: gateway.domain.example:443 # address of the gateway
     token: eyJ0eX....kNHYQ_4 # token for authentication
+    #protocol: Wss # Wss or Ws (default: Wss)
 ```
 ## Default Configuration Paths
 
