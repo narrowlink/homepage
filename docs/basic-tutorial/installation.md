@@ -8,7 +8,7 @@ keywords: [Installation, Gateway, Agent, Client, Narrowlink, Narrow, Link, Netwo
 
 Narrowlink can be installed in the following ways:
 
-<!-- - [Installing via Cargo (Recommended)](#cargo) -->
+- [Installing via Cargo (Recommended)](#cargo)
 - [Downloading the precompiled binary](#precompiled-binary)
 - [Installing from the source code](#source-code)
 
@@ -19,7 +19,7 @@ Each component of Narrowlink has an individual binary and package name with spec
 - `narrowlink-gateway` represents the [Gateway] component.
 - `narrowlink-token-generator` represents the [Token Generator] component.
 
-<!-- ## Cargo
+## Cargo
 
 Cargo is a package manager for the Rust programming language. It simplifies the process of managing Rust packages and their dependencies.
 
@@ -54,7 +54,7 @@ cargo install cargo-update
 
 ```bash
 cargo install-update narrowlink-client narrowlink-agent narrowlink-gateway narrowlink-token-generator
-``` -->
+```
 
 ## Precompiled Binary
 If you prefer to use precompiled binaries, they are available on the GitHub release page. You can download the binaries from the links below that refer to the latest release. Currently, we provide binaries for Linux, macOS, and Windows platforms for both ARM and x86 architectures. However, it's worth noting that Narrowlink is not limited to these platforms - you can build for other targets using alternative installation methods.
