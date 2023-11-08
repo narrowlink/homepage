@@ -13,6 +13,10 @@ hide_table_of_contents: true
 date: 2023-11-08T00:00
 ---
 
+<head>
+  <meta property="og:image" content="/blog/2023/Narrowlink-0.2.0.svg" />
+</head>
+
 
 ## Narrowlink 0.2.0 - Peer-to-Peer Connectivity and TUN Interface
 
