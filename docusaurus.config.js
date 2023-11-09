@@ -74,7 +74,7 @@ const config = {
       announcementBar: {
         id: 'support_us',
         content:
-          '🎉️ <b><a href="https://narrowlink.com/blog/Narrowlink-0.2.0-Peer-to-Peer-Connectivity-and-TUN-Interface" target="_blank">Narrowlink v0.2.0</a> is now out!</b> 🥳️',
+          '🎉️ <b><a href="https://narrowlink.com/blog/Narrowlink-0.2.0-Peer-to-Peer-Connectivity-and-TUN-Interface" target="_blank">Narrowlink v0.2</a> has launched!</b>',
         backgroundColor: '#39587a',
         textColor: '#ffffff',
         isCloseable: false,

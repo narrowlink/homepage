@@ -73,11 +73,7 @@ Narrowlink has other minor improvements, as follows:
 
 Narrowlink is currently optimized for personal use and is committed to further enhancing its capabilities to support a broader range of applications, including enterprise usage. Our future plans for Narrowlink include a focus on stabilization, improving the user interface, and integrating cloud-based solutions
 
-### A Big Thank You to the Community
-
-I am genuinely thankful to the people who have shown trust in and warmly welcomed Narrowlink, especially members from <ins>Hackernews</ins> and <ins>Reddit</ins>, whose support has fueled my passion to continually enhance and extend Narrowlink.
-
-#### Call for contributors
+### Call for contributors
 
 Narrowlink is an open-source project and wholeheartedly welcomes contributions from the community in any form, be it code, documentation, sponsorship, or feedback. Narrowlink is particularly interested in contributions related to the web frontend interface using Svelte and Tailwind to develop management interfaces and GUI clients with Tauri.
 
