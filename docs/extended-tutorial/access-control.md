@@ -40,7 +40,7 @@ tokens: # list of tokens
           - TCP # protocol
         - !Domain # policy based on the destination domain name
           - !Agent agent_name # !Any means any agent, !Agent agent_name means the agent with the name agent_name
-          - narrow.host # destination domain name
+          - narrow.page # destination domain name
           - 443 # destination port
           - TCP # protocol
 ```
