@@ -6,7 +6,7 @@ keywords: [Publish Webserver, Gateway, Agent, Client, Narrowlink, Narrow, Link, 
 
 # Webserver Publish
 
-You can publish a web server using Narrowlink. The gateway will automatically issue a certificate for the domain name and publish the web server. For example, [narrow.host](https://narrow.host) is a web server that is published using Narrowlink, while its backend is running in a highly restricted network.
+You can publish a web server using Narrowlink. The gateway will automatically issue a certificate for the domain name and publish the web server. For example, [narrow.page](https://narrow.page) is a web server that is published using Narrowlink, while its backend is running in a highly restricted network.
 
 
 To publish a web server using Narrowlink, you need to have a valid domain name with an `A` or `CNAME` DNS record that points to the gateway address. Then, you need to generate a publish token that will be used by the agent to publish the web server. To generate a publish token, you can add the following lines to the [Token Generator](/docs/token-generator) configuration file:
