@@ -71,14 +71,14 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
-      announcementBar: {
-        id: 'support_us',
-        content:
-          '🎉️ <b><a href="https://narrowlink.com/blog/Narrowlink-0.2.0-Peer-to-Peer-Connectivity-and-TUN-Interface" target="_blank">Narrowlink v0.2</a> has launched!</b>',
-        backgroundColor: '#39587a',
-        textColor: '#ffffff',
-        isCloseable: false,
-      },
+      // announcementBar: {
+      //   id: 'support_us',
+      //   content:
+      //     '🎉️ <b><a href="https://narrowlink.com/blog/Narrowlink-0.2.0-Peer-to-Peer-Connectivity-and-TUN-Interface" target="_blank">Narrowlink v0.2</a> has launched!</b>',
+      //   backgroundColor: '#39587a',
+      //   textColor: '#ffffff',
+      //   isCloseable: false,
+      // },
       // metadata: [{ name: 'tag', content: 'cooking' }],
       // Replace with your project's social card
       image: 'img/narrowlink-social-card.jpg',
